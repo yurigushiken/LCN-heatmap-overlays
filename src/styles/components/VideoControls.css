@@ -1,0 +1,152 @@
+.video-controls {
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.controls-title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #f0f0f0;
+}
+
+.frame-count {
+  color: #aaa;
+}
+
+.scrub-container {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.scrub-bar {
+  width: 100%;
+  cursor: pointer;
+  height: 6px;
+  background: #444;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.scrub-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scrub-bar::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.controls-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.frame-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-button {
+  background-color: #444;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.control-button:hover {
+  background-color: #555;
+}
+
+.play-pause-button {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  background-color: #346751;
+  margin-bottom: 8px;
+}
+
+.play-pause-button:hover {
+  background-color: #2a563f;
+}
+
+/* Playback Speed Controls */
+.playback-speed {
+  margin-top: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speed-title {
+  font-size: 14px;
+  margin: 0 0 8px 0;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.speed-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.speed-button {
+  background-color: #444;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 12px;
+  flex: 1;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.speed-button:first-child {
+  margin-left: 0;
+}
+
+.speed-button:last-child {
+  margin-right: 0;
+}
+
+.speed-button.active {
+  background-color: #346751;
+  font-weight: bold;
+}
+
+.speed-button:hover {
+  background-color: #555;
+}
+
+.speed-button.active:hover {
+  background-color: #2a563f;
+} 

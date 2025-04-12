@@ -1,0 +1,629 @@
+[
+  {
+    "id": "f",
+    "title": "Floating Toy",
+    "description": "Floating toy condition where a toy floats without human interaction",
+    "videoPath": "/videos/f.mp4",
+    "overlays": [
+      {
+        "id": "f-seven",
+        "title": "7 Months",
+        "path": "",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "f-eight",
+        "title": "8 Months",
+        "path": "",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "f-nine",
+        "title": "9 Months",
+        "path": "",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "f-ten",
+        "title": "10 Months",
+        "path": "",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "f-eleven",
+        "title": "11 Months",
+        "path": "",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "f-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "f-adult",
+        "title": "Adult",
+        "path": "",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "gw",
+    "title": "Give with Toy",
+    "description": "One person giving a toy to another person",
+    "videoPath": "/videos/gw.mp4",
+    "overlays": [
+      {
+        "id": "gw-seven",
+        "title": "7 Months",
+        "path": "/overlays/gw_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 1.0
+      },
+      {
+        "id": "gw-eight",
+        "title": "8 Months",
+        "path": "/overlays/gw_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 1.0
+      },
+      {
+        "id": "gw-nine",
+        "title": "9 Months",
+        "path": "/overlays/gw_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 1.0
+      },
+      {
+        "id": "gw-ten",
+        "title": "10 Months",
+        "path": "/overlays/gw_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 1.0
+      },
+      {
+        "id": "gw-eleven",
+        "title": "11 Months",
+        "path": "/overlays/gw_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 1.0
+      },
+      {
+        "id": "gw-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 1.0
+      },
+      {
+        "id": "gw-adult",
+        "title": "Adult",
+        "path": "/overlays/gw_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 1.0
+      }
+    ]
+  },
+  {
+    "id": "gwo",
+    "title": "Give without Toy",
+    "description": "The giving motion without an actual toy",
+    "videoPath": "/videos/gwo.mp4",
+    "overlays": [
+      {
+        "id": "gwo-seven",
+        "title": "7 Months",
+        "path": "/overlays/gwo_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 1.0
+      },
+      {
+        "id": "gwo-eight",
+        "title": "8 Months",
+        "path": "/overlays/gwo_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 1.0
+      },
+      {
+        "id": "gwo-nine",
+        "title": "9 Months",
+        "path": "/overlays/gwo_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 1.0
+      },
+      {
+        "id": "gwo-ten",
+        "title": "10 Months",
+        "path": "/overlays/gwo_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "gwo-eleven",
+        "title": "11 Months",
+        "path": "/overlays/gwo_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "gwo-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "gwo-adult",
+        "title": "Adult",
+        "path": "/overlays/gwo_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "hw",
+    "title": "Hug with Toy",
+    "description": "Hugging while one person holds a toy",
+    "videoPath": "/videos/hw.mp4",
+    "overlays": [
+      {
+        "id": "hw-seven",
+        "title": "7 Months",
+        "path": "/overlays/hw_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "hw-eight",
+        "title": "8 Months",
+        "path": "/overlays/hw_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "hw-nine",
+        "title": "9 Months",
+        "path": "/overlays/hw_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "hw-ten",
+        "title": "10 Months",
+        "path": "/overlays/hw_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "hw-eleven",
+        "title": "11 Months",
+        "path": "/overlays/hw_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "hw-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "hw-adult",
+        "title": "Adult",
+        "path": "/overlays/hw_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "hwo",
+    "title": "Hug without Toy",
+    "description": "Hugging with no toy present",
+    "videoPath": "/videos/hwo.mp4",
+    "overlays": [
+      {
+        "id": "hwo-seven",
+        "title": "7 Months",
+        "path": "/overlays/hwo_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "hwo-eight",
+        "title": "8 Months",
+        "path": "/overlays/hwo_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "hwo-nine",
+        "title": "9 Months",
+        "path": "/overlays/hwo_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "hwo-ten",
+        "title": "10 Months",
+        "path": "/overlays/hwo_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "hwo-eleven",
+        "title": "11 Months",
+        "path": "/overlays/hwo_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "hwo-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "hwo-adult",
+        "title": "Adult",
+        "path": "/overlays/hwo_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "sw",
+    "title": "Show with Toy",
+    "description": "One person showing a toy to another person",
+    "videoPath": "/videos/sw.mp4",
+    "overlays": [
+      {
+        "id": "sw-seven",
+        "title": "7 Months",
+        "path": "/overlays/sw_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "sw-eight",
+        "title": "8 Months",
+        "path": "/overlays/sw_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "sw-nine",
+        "title": "9 Months",
+        "path": "/overlays/sw_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "sw-ten",
+        "title": "10 Months",
+        "path": "/overlays/sw_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "sw-eleven",
+        "title": "11 Months",
+        "path": "/overlays/sw_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "sw-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "sw-adult",
+        "title": "Adult",
+        "path": "/overlays/sw_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "swo",
+    "title": "Show without Toy",
+    "description": "The showing motion without an actual toy",
+    "videoPath": "/videos/swo.mp4",
+    "overlays": [
+      {
+        "id": "swo-seven",
+        "title": "7 Months",
+        "path": "/overlays/swo_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "swo-eight",
+        "title": "8 Months",
+        "path": "/overlays/swo_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "swo-nine",
+        "title": "9 Months",
+        "path": "/overlays/swo_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "swo-ten",
+        "title": "10 Months",
+        "path": "/overlays/swo_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "swo-eleven",
+        "title": "11 Months",
+        "path": "/overlays/swo_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "swo-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "swo-adult",
+        "title": "Adult",
+        "path": "/overlays/swo_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "ugw",
+    "title": "Upside-down Give with Toy",
+    "description": "Upside-down variant of giving a toy",
+    "videoPath": "/videos/ugw.mp4",
+    "overlays": [
+      {
+        "id": "ugw-seven",
+        "title": "7 Months",
+        "path": "/overlays/ugw_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugw-eight",
+        "title": "8 Months",
+        "path": "/overlays/ugw_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugw-nine",
+        "title": "9 Months",
+        "path": "/overlays/ugw_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugw-ten",
+        "title": "10 Months",
+        "path": "/overlays/ugw_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugw-eleven",
+        "title": "11 Months",
+        "path": "/overlays/ugw_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugw-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugw-adult",
+        "title": "Adult",
+        "path": "/overlays/ugw_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "ugwo",
+    "title": "Upside-down Give without Toy",
+    "description": "Upside-down variant of the giving motion without a toy",
+    "videoPath": "/videos/ugwo.mp4",
+    "overlays": [
+      {
+        "id": "ugwo-seven",
+        "title": "7 Months",
+        "path": "/overlays/ugwo_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugwo-eight",
+        "title": "8 Months",
+        "path": "/overlays/ugwo_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugwo-nine",
+        "title": "9 Months",
+        "path": "/overlays/ugwo_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugwo-ten",
+        "title": "10 Months",
+        "path": "/overlays/ugwo_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugwo-eleven",
+        "title": "11 Months",
+        "path": "/overlays/ugwo_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugwo-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "ugwo-adult",
+        "title": "Adult",
+        "path": "/overlays/ugwo_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "uhw",
+    "title": "Upside-down Hug with Toy",
+    "description": "Upside-down variant of hugging with a toy",
+    "videoPath": "/videos/uhw.mp4",
+    "overlays": [
+      {
+        "id": "uhw-seven",
+        "title": "7 Months",
+        "path": "/overlays/uhw_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhw-eight",
+        "title": "8 Months",
+        "path": "/overlays/uhw_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhw-nine",
+        "title": "9 Months",
+        "path": "/overlays/uhw_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhw-ten",
+        "title": "10 Months",
+        "path": "/overlays/uhw_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhw-eleven",
+        "title": "11 Months",
+        "path": "/overlays/uhw_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhw-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhw-adult",
+        "title": "Adult",
+        "path": "/overlays/uhw_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  },
+  {
+    "id": "uhwo",
+    "title": "Upside-down Hug without Toy",
+    "description": "Upside-down variant of hugging without a toy",
+    "videoPath": "/videos/uhwo.mp4",
+    "overlays": [
+      {
+        "id": "uhwo-seven",
+        "title": "7 Months",
+        "path": "/overlays/uhwo_seven.webm",
+        "ageGroup": "seven",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhwo-eight",
+        "title": "8 Months",
+        "path": "/overlays/uhwo_eight.webm",
+        "ageGroup": "eight",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhwo-nine",
+        "title": "9 Months",
+        "path": "/overlays/uhwo_nine.webm",
+        "ageGroup": "nine",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhwo-ten",
+        "title": "10 Months",
+        "path": "/overlays/uhwo_ten.webm",
+        "ageGroup": "ten",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhwo-eleven",
+        "title": "11 Months",
+        "path": "/overlays/uhwo_eleven.webm",
+        "ageGroup": "eleven",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhwo-twelve",
+        "title": "12 Months",
+        "path": "",
+        "ageGroup": "twelve",
+        "opacity": 0.7
+      },
+      {
+        "id": "uhwo-adult",
+        "title": "Adult",
+        "path": "/overlays/uhwo_adult.webm",
+        "ageGroup": "adult",
+        "opacity": 0.7
+      }
+    ]
+  }
+] 
