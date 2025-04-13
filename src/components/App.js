@@ -100,9 +100,9 @@ function App() {
               <p className="app-description">Language and Cognitive Neuroscience Lab</p>
             </div>
             <div className="header-links">
-              <a href="https://github.com/yurigushiken/LCN-heatmap-overlays" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://github.com/yurigushiken/LCN-heatmap-overlays">Yuri's GitHub</a>
               <span className="link-separator">|</span>
-              <a href="https://yurigushiken.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+              <a href="https://yurigushiken.github.io/">Return to Website</a>
             </div>
           </div>
         </header>
