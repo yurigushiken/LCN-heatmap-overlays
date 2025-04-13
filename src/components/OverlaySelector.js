@@ -21,14 +21,15 @@ const OverlaySelector = ({ overlays, activeOverlays, onToggleOverlay }) => {
  if (b.ageGroup === "adult") return 1;
  
  // Extract numeric values from ageGroup
- const getMonthValue = (ageGroup) => {
- if (ageGroup === "seven") return 7;
- if (ageGroup === "eight") return 8;
- if (ageGroup === "nine") return 9;
- if (ageGroup === "ten") return 10;
- if (ageGroup === "eleven") return 11;
- if (ageGroup === "twelve") return 12;
- return 99; // Default value for unknown age groups
+ const getMonthValue = (month) => {
+  if (month === "adult") return 0;
+  if (month === "seven") return 7;
+  if (month === "eight") return 8;
+  if (month === "nine") return 9;
+  if (month === "ten") return 10;
+  if (month === "eleven") return 11;
+  if (month === "twelve") return 12;
+  return 0; // Default
  };
  
  return getMonthValue(a.ageGroup) - getMonthValue(b.ageGroup);
