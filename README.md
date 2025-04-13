@@ -9,7 +9,17 @@
 
 ## Overview
 
-This project provides a web-based interface for viewing videos with interactive heatmap overlays for eye-tracking data from the Language and Cognitive Neuroscience Lab. It supports multiple overlay toggles and age group selections to facilitate comparative analysis of eye-tracking data.
+This project provides a web-based interface for viewing videos with interactive heatmap overlays for eye-tracking data from the Language and Cognitive Neuroscience Lab. It visualizes infant and adult gaze patterns during social interaction events, enabling researchers to analyze how visual attention to social events develops across different age groups. The application supports multiple overlay toggles and age group selections to facilitate comparative analysis.
+
+## Scientific Background
+
+The heatmap overlays represent eye-tracking data collected from participants across different developmental stages (7-11 month-old infants and adults). Each overlay visualizes where participants directed their attention during social interaction events. The data has been processed using Gaussian kernel density estimation to create visually informative heatmaps highlighting areas of concentrated visual attention.
+
+Key scientific aspects:
+- Tracks developmental changes in social attention from infancy to adulthood
+- Enables direct comparison between different age groups through overlay stacking
+- Uses color-coding by age group for intuitive visual differentiation
+- Employs variable intensity mapping to show gaze concentration
 
 ## Features
 
@@ -80,7 +90,7 @@ LCN-heatmap-overlays/
 
 ### Base Videos
 
-The application uses base videos stored in `public/videos/`. These are MP4 files with the following naming pattern:
+The application uses base videos stored in `public/videos/`. These are MP4 files showing different social interaction events with the following naming pattern:
 
 - `f.mp4` - Floating toy
 - `gw.mp4` - Give with toy
@@ -96,10 +106,12 @@ The application uses base videos stored in `public/videos/`. These are MP4 files
 
 ### Overlay Videos
 
-Overlay videos are WebM files with alpha channel transparency, stored in `public/overlays/`. These follow a naming pattern of `[event-type]_[age-group].webm`, such as:
+Overlay videos are WebM files with alpha channel transparency, stored in `public/overlays/`. Each overlay represents the gaze patterns for a specific age group (seven, eight, nine, ten, eleven months, or adult) during a particular event. The files follow a naming pattern of `[event-type]_[age-group].webm`, such as:
 
 - `gw_seven.webm` - Give with toy, 7-month age group
 - `gw_adult.webm` - Give with toy, adult age group
+
+Each age group has a distinct color scheme for easy identification when multiple overlays are displayed simultaneously. The overlays use a multi-layered approach with different intensities representing varying levels of visual attention concentration.
 
 ## Configuration
 
@@ -115,6 +127,16 @@ The `videos.json` file in the public directory contains the configuration for al
   - `path`: Path to the WebM overlay file
   - `ageGroup`: Category for filtering (e.g., "seven", "adult")
   - `opacity`: Transparency level (0-1)
+
+## Technical Details
+
+The heatmap overlays were generated from raw eye-tracking data using a sophisticated processing pipeline:
+
+- Gaussian kernel density estimation to create smooth heatmaps from discrete gaze points
+- Age-specific color encoding to differentiate between developmental stages
+- Multiple transparency layers to represent varying intensity levels of visual attention
+- VP9 video encoding with alpha channel transparency for web compatibility
+- Strategic positioning of age-group legends to prevent overlap when multiple overlays are active
 
 ## Performance
 
