@@ -5,7 +5,18 @@ import "../styles/components/VideoPlayer.css";
 import HeatmapOverlay from "./HeatmapOverlay";
 import { syncOverlayVideos } from "../utils/videoSyncUtils";
 import { useVideo } from "../utils/VideoContext";
-import { resolvePath } from "../utils/urlUtils";
+
+/**
+ * Helper function to build correct video paths for all environments
+ */
+const buildVideoPath = (relativePath) => {
+  // Ensure relativePath is treated as a string
+  const pathString = String(relativePath || '');
+  const normalizedPath = pathString.startsWith('/') ? pathString.substring(1) : pathString;
+  // PUBLIC_URL might be undefined in some setups, default to empty string
+  const baseUrl = process.env.PUBLIC_URL || '';
+  return `${baseUrl}/${normalizedPath}`;
+};
 
 /**
  * Video player component that handles all synchronization between the main video
@@ -23,9 +34,6 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
   // Get the shared video ref from context
   const { videoRef, handleTimeUpdate, handleDurationChange } = useVideo();
 
-  // Process video source to ensure it works in all environments
-  const processedVideoSrc = videoSrc ? resolvePath(videoSrc) : '';
-  
   // Stable callback for assigning refs to prevent ref assignment from causing re-renders
   const getOverlayRef = useCallback((id) => (video) => {
     if (video) {
@@ -79,6 +87,9 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     const video = videoRef.current;
     if (!video || !videoSrc) return;
 
+    // Process video source using our helper function
+    const processedVideoSrc = buildVideoPath(videoSrc);
+    
     console.log(`Updating base video source: ${processedVideoSrc}`);
     
     // Update source with properly processed path
@@ -95,7 +106,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     
     // Remove autoplay - let user explicitly press play
     // This avoids potential autoplay blocking issues and follows the consultant's recommendation
-  }, [videoSrc, videoRef, processedVideoSrc]);
+  }, [videoSrc, videoRef]);
 
   // Helper function to get overlay video source - memoized for stability
   const getOverlayVideoSource = useCallback((overlay) => {
@@ -104,8 +115,8 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     if (!path || path.trim() === '') {
       return null;
     }
-    // Ensure path has the correct base URL for all environments
-    return resolvePath(path);
+    // Use our helper function to ensure correct path resolution
+    return buildVideoPath(path);
   }, []);
 
   // Set up synchronization between base video and overlay videos with a slight delay
@@ -237,7 +248,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
         loop
         preload="auto"
       >
-        <source src={processedVideoSrc} type="video/mp4" />
+        <source src={buildVideoPath(videoSrc)} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
