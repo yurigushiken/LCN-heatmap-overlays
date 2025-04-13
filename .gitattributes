@@ -1,0 +1,13 @@
+# Explicitly handle media files as regular Git files, not LFS
+*.mp4 -filter=lfs -diff=lfs -merge=lfs -text
+*.webm -filter=lfs -diff=lfs -merge=lfs -text
+*.mov -filter=lfs -diff=lfs -merge=lfs -text
+*.ogg -filter=lfs -diff=lfs -merge=lfs -text
+*.mp3 -filter=lfs -diff=lfs -merge=lfs -text
+
+# Treat binary files as binary
+*.mp4 binary
+*.webm binary
+*.mov binary
+*.ogg binary
+*.mp3 binary 
