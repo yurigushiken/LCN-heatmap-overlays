@@ -1,8 +1,3 @@
-<div align="right">
-  <a href="https://github.com/yurigushiken/LCN-heatmap-overlays">GitHub</a> |
-  <a href="https://yurigushiken.github.io/">Portfolio</a>
-</div>
-
 # README.md
 
 # LCN Heatmap Overlay Viewer
