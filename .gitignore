@@ -53,10 +53,3 @@ __pycache__/
 *$py.class
 *.so
 
-# These lines are commented out to ensure media files ARE tracked by Git
-# DO NOT uncomment these lines - we want to include media files in Git
-# /public/videos
-# /public/overlays
-# *.mp4
-# *.webm
-# *.mov 
