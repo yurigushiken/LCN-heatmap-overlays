@@ -1,9 +1,9 @@
 .overlay-selector {
-  background-color: #f3f4f6;
+  background-color: #333333;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   width: 100%;
   box-sizing: border-box;
 }
@@ -13,7 +13,7 @@
   margin-bottom: 8px;
   font-size: 22px;
   font-weight: 600;
-  color: #111827;
+  color: #ffffff;
 }
 
 .overlay-options {
@@ -42,10 +42,11 @@
 .checkbox-label {
   font-size: 17px;
   cursor: pointer;
+  color: #e0e0e0;
 }
 
 .no-overlays-message {
-  color: #6b7280;
+  color: #aaaaaa;
   font-style: italic;
   margin-top: 8px;
   font-size: 14px;

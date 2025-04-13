@@ -1,9 +1,9 @@
 .age-group-toggle {
-  background-color: #f3f4f6;
+  background-color: #333333;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .age-group-toggle h2 {
@@ -11,7 +11,7 @@
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 600;
-  color: #111827;
+  color: #ffffff;
 }
 
 .age-group-buttons {
@@ -21,26 +21,27 @@
 }
 
 .age-group-button {
-  background-color: #e5e7eb;
+  background-color: #444444;
   border: none;
   border-radius: 4px;
   padding: 8px 12px;
   font-size: 14px;
+  color: #e0e0e0;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
 }
 
 .age-group-button:hover {
-  background-color: #d1d5db;
+  background-color: #555555;
 }
 
 .age-group-button.active {
-  background-color: #3b82f6;
+  background-color: #346751;
   color: white;
 }
 
 .no-data-message {
-  color: #6b7280;
+  color: #aaaaaa;
   font-style: italic;
   margin-top: 8px;
   font-size: 14px;
