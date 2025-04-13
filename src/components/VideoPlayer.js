@@ -5,6 +5,7 @@ import "../styles/components/VideoPlayer.css";
 import HeatmapOverlay from "./HeatmapOverlay";
 import { syncOverlayVideos } from "../utils/videoSyncUtils";
 import { useVideo } from "../utils/VideoContext";
+import { resolvePath } from "../utils/urlUtils";
 
 /**
  * Video player component that handles all synchronization between the main video
@@ -23,7 +24,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
   const { videoRef, handleTimeUpdate, handleDurationChange } = useVideo();
 
   // Process video source to ensure it works in all environments
-  const processedVideoSrc = videoSrc ? `${process.env.PUBLIC_URL}${videoSrc}` : '';
+  const processedVideoSrc = videoSrc ? resolvePath(videoSrc) : '';
   
   // Stable callback for assigning refs to prevent ref assignment from causing re-renders
   const getOverlayRef = useCallback((id) => (video) => {
@@ -104,7 +105,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
       return null;
     }
     // Ensure path has the correct base URL for all environments
-    return `${process.env.PUBLIC_URL}${path}`;
+    return resolvePath(path);
   }, []);
 
   // Set up synchronization between base video and overlay videos with a slight delay
