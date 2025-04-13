@@ -7,7 +7,7 @@ import ControlPanel from "./ControlPanel";
 import VideoControls from "./VideoControls";
 import "../styles/components/App.css";
 import { fetchVideos } from "../utils/dataUtils";
-import { preloadVideos } from "../utils/videoCache";
+// import { preloadVideos } from "../utils/videoCache"; // No longer using aggressive preloading
 import { VideoProvider } from "../utils/VideoContext";
 
 function App() {
@@ -33,8 +33,8 @@ function App() {
         // Set initial video selection
         setSelectedVideo(data[0]);
         
-        // Preload all videos for caching
-        preloadVideos(data);
+        // No longer preloading all videos - let the browser handle loading as needed
+        // preloadVideos(data);
         
       } catch (err) {
         console.error("Error loading video data:", err);

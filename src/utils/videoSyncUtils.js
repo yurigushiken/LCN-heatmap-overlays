@@ -1,144 +1,220 @@
 /**
- * Utility functions for synchronizing multiple video elements
+ * Simplified Video Sync Utility
+ * Uses minimal sync for 1x speed, RAF for precise sync at other speeds.
+ * Prioritizes robust playback initiation and error logging.
  */
 
-/**
- * Synchronizes a secondary video to a primary video
- * @param {HTMLVideoElement} primaryVideo - The main video element
- * @param {HTMLVideoElement} secondaryVideo - The video to synchronize
- * @param {number} threshold - Time difference threshold in seconds (default: 0.1)
- */
-export const synchronizeVideos = (primaryVideo, secondaryVideo, threshold = 0.1) => {
-  if (!primaryVideo || !secondaryVideo) return;
-  
-  // Update time if out of sync
-  if (Math.abs(secondaryVideo.currentTime - primaryVideo.currentTime) > threshold) {
-    secondaryVideo.currentTime = primaryVideo.currentTime;
-  }
-  
-  // Match play/pause state
-  if (primaryVideo.paused) {
-    secondaryVideo.pause();
-  } else {
-    secondaryVideo.play().catch(e => console.error(" Failed to play synchronized video:\, e"));
-  }
-};
+const debug = true; // Set true for detailed console logs during debugging
 
-/**
- * Attaches synchronization listeners between the base video and an overlay video
- * @param {HTMLVideoElement} baseVideo - The main video element
- * @param {HTMLVideoElement} overlayVideo - The overlay video to sync with the base
- * @returns {Function} Cleanup function to remove all listeners
- */
-export const attachSyncListeners = (baseVideo, overlayVideo) => {
-  if (!baseVideo || !overlayVideo) {
-    return () => {}; // No-op cleanup function
-  }
-
-  // Sync time function
-  const syncTime = () => {
-    if (Math.abs(overlayVideo.currentTime - baseVideo.currentTime) > 0.1) {
-      overlayVideo.currentTime = baseVideo.currentTime;
-    }
-  };
-
-  // Play event handler
-  const handlePlay = () => {
-    if (overlayVideo.paused) {
-      overlayVideo.play().catch(err => console.warn("Could not play overlay video:", err));
-    }
-  };
-
-  // Pause event handler
-  const handlePause = () => {
-    if (!overlayVideo.paused) {
-      overlayVideo.pause();
-    }
-  };
-
-  // Seek event handler
-  const handleSeek = () => {
-    syncTime();
-  };
-
-  // Playback rate change handler
-  const handleRateChange = () => {
-    overlayVideo.playbackRate = baseVideo.playbackRate;
-  };
-
-  // Add event listeners to base video
-  baseVideo.addEventListener("play", handlePlay);
-  baseVideo.addEventListener("pause", handlePause);
-  baseVideo.addEventListener("seeking", handleSeek);
-  baseVideo.addEventListener("seeked", handleSeek);
-  baseVideo.addEventListener("ratechange", handleRateChange);
-
-  // Sync interval for continuous synchronization
-  const syncInterval = setInterval(syncTime, 1000);
-
-  // Initial sync when overlay is loaded
-  overlayVideo.addEventListener("loadeddata", syncTime);
-
-  // Start playing overlay if base video is already playing
-  if (!baseVideo.paused) {
-    overlayVideo.play().catch(err => console.warn("Could not play overlay on init:", err));
-  }
-
-  // Return cleanup function
-  return () => {
-    baseVideo.removeEventListener("play", handlePlay);
-    baseVideo.removeEventListener("pause", handlePause);
-    baseVideo.removeEventListener("seeking", handleSeek);
-    baseVideo.removeEventListener("seeked", handleSeek);
-    baseVideo.removeEventListener("ratechange", handleRateChange);
-    overlayVideo.removeEventListener("loadeddata", syncTime);
-    clearInterval(syncInterval);
-  };
-};
-
-/**
- * Synchronizes overlay videos with a base video
- * @param {HTMLVideoElement} baseVideo - The primary video element
- * @param {Array<HTMLVideoElement>} overlayVideos - Array of overlay video elements
- * @returns {Function} - Cleanup function to remove event listeners
- */
 export const syncOverlayVideos = (baseVideo, overlayVideos) => {
+  console.log('syncOverlayVideos called with:', 
+    {baseReady: baseVideo?.readyState, overlayCount: overlayVideos?.length});
+  
   if (!baseVideo || !overlayVideos || overlayVideos.length === 0) {
+    console.log('No valid overlays or base video, returning empty cleanup');
+    return () => {}; // Return no-op cleanup
+  }
+
+  const validOverlays = overlayVideos.filter(Boolean);
+  if (validOverlays.length === 0) {
+    console.log('No valid overlays after filtering, returning empty cleanup');
     return () => {};
   }
+  
+  console.log('Valid overlays:', validOverlays.map(v => v.src?.split('/').pop()));
 
-  const synchronizeVideos = () => {
-    overlayVideos.forEach(overlay => {
+  let rafId = null;
+  let isRAFRunning = false;
+  const timeThreshold = 0.1; // Threshold (seconds) for time sync correction at non-1x speeds
+
+  // --- RAF Sync Loop (ONLY for non-1x speed time adjustments) ---
+  const syncFrameNon1x = () => {
+    if (baseVideo.paused || !isRAFRunning || baseVideo.playbackRate === 1.0) {
+      isRAFRunning = false; // Stop if paused or rate is 1x
+      if (debug) console.log('RAF loop stopped:', 
+        {paused: baseVideo.paused, rate: baseVideo.playbackRate});
+      return;
+    }
+
+    const baseTime = baseVideo.currentTime;
+    validOverlays.forEach(overlay => {
       if (!overlay) return;
-      
-      // Sync time if difference is significant
-      if (Math.abs(overlay.currentTime - baseVideo.currentTime) > 0.1) {
-        overlay.currentTime = baseVideo.currentTime;
+      // Correct significant drift ONLY when not at 1x speed
+      if (Math.abs(overlay.currentTime - baseTime) > timeThreshold) {
+        try {
+          if (debug) console.log(`SYNC (Non-1x): Correcting drift on ${overlay.src.split('/').pop()} to ${baseTime.toFixed(3)}`);
+          overlay.currentTime = baseTime;
+        } catch (e) { 
+          console.error(`Error adjusting time for ${overlay.src.split('/').pop()}:`, e);
+        }
       }
+    });
+
+    rafId = requestAnimationFrame(syncFrameNon1x); // Continue loop
+  };
+
+  // --- Playback Initiation Helper ---
+  const tryPlayOverlay = (overlay) => {
+    if (overlay && overlay.paused) {
+      console.log(`Attempting to play overlay: ${overlay.src.split('/').pop()}, readyState: ${overlay.readyState}`);
       
-      // Match play/pause state
-      if (baseVideo.paused) {
-        if (!overlay.paused) overlay.pause();
+      overlay.muted = true; // Ensure muted before playing
+      const playPromise = overlay.play();
+      
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          console.log(`Successfully started playback for ${overlay.src.split('/').pop()}`);
+        }).catch(error => {
+          // CRITICAL: Log errors if play fails
+          console.error(`Overlay ${overlay.src.split('/').pop()} failed to play:`, error);
+        });
       } else {
-        overlay.play().catch(e => console.error("Failed to play overlay video:", e));
+        console.log(`Play promise undefined for ${overlay.src.split('/').pop()}`);
+      }
+    } else if (overlay) {
+      console.log(`Overlay already playing: ${overlay.src.split('/').pop()}`);
+    }
+  };
+
+  // --- Event Handlers (Attached to Base Video) ---
+  const handlePlay = () => {
+    console.log("Sync: handlePlay triggered. Base video:", 
+      {time: baseVideo.currentTime, rate: baseVideo.playbackRate});
+    
+    const rate = baseVideo.playbackRate;
+    validOverlays.forEach(overlay => {
+      if (overlay) {
+        if (overlay.playbackRate !== rate) {
+          console.log(`Setting overlay ${overlay.src.split('/').pop()} rate to ${rate}`);
+          overlay.playbackRate = rate; // Sync rate first
+        }
+        tryPlayOverlay(overlay); // Attempt to play
+      }
+    });
+    // Start RAF *only if* needed (not 1x)
+    if (rate !== 1.0) {
+      console.log(`Starting RAF for non-1x playback (${rate}x)`);
+      isRAFRunning = true;
+      rafId = requestAnimationFrame(syncFrameNon1x);
+    }
+  };
+
+  const handlePause = () => {
+    console.log("Sync: handlePause triggered. Base video:", 
+      {time: baseVideo.currentTime, wasPaused: baseVideo.paused});
+    
+    isRAFRunning = false; // Stop RAF loop regardless of rate
+    if (rafId) {
+      console.log('Cancelling RAF loop');
+      cancelAnimationFrame(rafId);
+    }
+    rafId = null;
+    
+    validOverlays.forEach(overlay => {
+      if (overlay && !overlay.paused) {
+        console.log(`Pausing overlay: ${overlay.src.split('/').pop()}`);
+        overlay.pause();
+      } else if (overlay) {
+        console.log(`Overlay already paused: ${overlay.src.split('/').pop()}`);
       }
     });
   };
 
-  // Add event listeners to base video
-  baseVideo.addEventListener("play", synchronizeVideos);
-  baseVideo.addEventListener("pause", synchronizeVideos);
-  baseVideo.addEventListener("seeked", synchronizeVideos);
-  baseVideo.addEventListener("timeupdate", synchronizeVideos);
+  const handleSeeked = () => {
+    console.log("Sync: handleSeeked triggered. Base video:", 
+      {time: baseVideo.currentTime, paused: baseVideo.paused});
+    
+    const seekTime = baseVideo.currentTime;
+    validOverlays.forEach(overlay => {
+      if (overlay) {
+        try {
+          console.log(`Seeking overlay ${overlay.src.split('/').pop()} to ${seekTime}`);
+          overlay.currentTime = seekTime; // Force time sync after seek
+        } catch (e) { 
+          console.error(`Error seeking overlay ${overlay.src.split('/').pop()}:`, e);
+        }
+      }
+    });
+    // If playing after seek, restart RAF only if needed
+    if (!baseVideo.paused && baseVideo.playbackRate !== 1.0) {
+      console.log('Restarting RAF after seek');
+      isRAFRunning = true;
+      rafId = requestAnimationFrame(syncFrameNon1x);
+    }
+  };
 
-  // Initial synchronization
-  synchronizeVideos();
+  const handleRateChange = () => {
+    console.log(`Sync: handleRateChange triggered. New rate: ${baseVideo.playbackRate}x`);
+    
+    const newRate = baseVideo.playbackRate;
+    const baseTime = baseVideo.currentTime; // Get current time *before* changing rate
+    validOverlays.forEach(overlay => {
+      if (overlay) {
+        console.log(`Updating overlay ${overlay.src.split('/').pop()} rate to ${newRate} and time to ${baseTime}`);
+        overlay.playbackRate = newRate; // Sync rate
+        try {
+          overlay.currentTime = baseTime; // Force time sync
+        } catch(e) { 
+          console.error(`Error updating time for ${overlay.src.split('/').pop()}:`, e);
+        }
+      }
+    });
 
-  // Return cleanup function
+    // Start or stop RAF based on new rate
+    if (newRate !== 1.0 && !baseVideo.paused) {
+      console.log(`Starting RAF for non-1x playback (${newRate}x)`);
+      isRAFRunning = true;
+      rafId = requestAnimationFrame(syncFrameNon1x);
+    } else {
+      console.log('Stopping RAF for 1x playback');
+      isRAFRunning = false;
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+  };
+
+  // --- Initialization ---
+  console.log('Sync: Initializing overlays...');
+  validOverlays.forEach(overlay => {
+    if (overlay) {
+      console.log(`Initializing overlay: ${overlay.src.split('/').pop()}, readyState: ${overlay.readyState}`);
+      overlay.muted = true;
+      overlay.currentTime = baseVideo.currentTime;
+      overlay.playbackRate = baseVideo.playbackRate;
+      if (!baseVideo.paused) {
+        console.log(`Base video is playing, attempting to play overlay: ${overlay.src.split('/').pop()}`);
+        tryPlayOverlay(overlay); // Attempt initial play if base is playing
+      } else {
+        console.log(`Base video is paused, not playing overlay: ${overlay.src.split('/').pop()}`);
+      }
+    }
+  });
+
+  // Attach listeners
+  console.log('Attaching event listeners to base video');
+  baseVideo.addEventListener('play', handlePlay);
+  baseVideo.addEventListener('pause', handlePause);
+  // Use only 'seeked' - 'seeking' pausing caused issues before
+  baseVideo.addEventListener('seeked', handleSeeked);
+  baseVideo.addEventListener('ratechange', handleRateChange);
+  // Handle 'ended' for looping? Base video has loop attribute.
+  // If overlays need to loop too, they need the attribute or explicit handling.
+
+  // Start RAF loop *only if* initially playing and not at 1x speed
+  if (!baseVideo.paused && baseVideo.playbackRate !== 1.0) {
+    console.log(`Starting initial RAF for non-1x playback (${baseVideo.playbackRate}x)`);
+    isRAFRunning = true;
+    rafId = requestAnimationFrame(syncFrameNon1x);
+  }
+
+  // --- Cleanup Function ---
   return () => {
-    baseVideo.removeEventListener("play", synchronizeVideos);
-    baseVideo.removeEventListener("pause", synchronizeVideos);
-    baseVideo.removeEventListener("seeked", synchronizeVideos);
-    baseVideo.removeEventListener("timeupdate", synchronizeVideos);
+    console.log("Sync: Cleaning up listeners");
+    isRAFRunning = false;
+    if (rafId) cancelAnimationFrame(rafId);
+    baseVideo.removeEventListener('play', handlePlay);
+    baseVideo.removeEventListener('pause', handlePause);
+    baseVideo.removeEventListener('seeked', handleSeeked);
+    baseVideo.removeEventListener('ratechange', handleRateChange);
   };
 };

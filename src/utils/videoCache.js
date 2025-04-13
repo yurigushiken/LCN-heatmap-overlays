@@ -5,8 +5,6 @@
 export const preloadVideos = (videoData) => {
   if (!videoData || videoData.length === 0) return;
 
-  console.log("Preloading videos...");
-  
   // Preload base videos
   videoData.forEach(video => {
     if (!video.videoPath) return;
@@ -14,11 +12,6 @@ export const preloadVideos = (videoData) => {
     const videoElement = document.createElement('video');
     videoElement.preload = 'auto';
     videoElement.src = video.videoPath;
-    
-    // Listen for when it's loaded
-    videoElement.addEventListener('loadeddata', () => {
-      console.log(`Base video cached: ${video.videoPath}`);
-    });
     
     // Force loading
     videoElement.load();
@@ -33,10 +26,7 @@ export const preloadVideos = (videoData) => {
           overlayElement.preload = 'auto';
           overlayElement.src = overlay.path;
           
-          overlayElement.addEventListener('loadeddata', () => {
-            console.log(`Overlay video cached: ${overlay.path}`);
-          });
-          
+          // Force loading
           overlayElement.load();
         }
       });
