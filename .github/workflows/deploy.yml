@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          lfs: true  # Enable LFS support to get the actual files
+          lfs: false  # Explicitly disable LFS to ensure we get real files
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -39,6 +39,12 @@ jobs:
           ls -lh build/videos/
           echo "Checking build/overlays directory:"
           ls -lh build/overlays/
+          
+          # Verify files aren't LFS pointers
+          echo "Checking file content type for videos:"
+          file build/videos/*.mp4 | head -n 2
+          echo "Checking file content type for overlays:"
+          file build/overlays/*.webm | head -n 2
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
