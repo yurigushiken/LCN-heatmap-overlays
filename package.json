@@ -2,7 +2,7 @@
   "name": "lcn-heatmap-overlays",
   "version": "1.0.0",
   "description": "A React application for viewing videos with heatmap overlays for eye-tracking data",
-  "homepage": ".",
+  "homepage": "https://yurigushiken.github.io/LCN-heatmap-overlays/",
   "main": "src/index.js",
   "scripts": {
     "start": "react-scripts start",

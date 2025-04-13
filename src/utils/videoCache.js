@@ -11,7 +11,8 @@ export const preloadVideos = (videoData) => {
     
     const videoElement = document.createElement('video');
     videoElement.preload = 'auto';
-    videoElement.src = video.videoPath;
+    // Add PUBLIC_URL to ensure correct path resolution in all environments
+    videoElement.src = `${process.env.PUBLIC_URL}${video.videoPath}`;
     
     // Force loading
     videoElement.load();
@@ -24,7 +25,8 @@ export const preloadVideos = (videoData) => {
         if (overlay.path) {
           const overlayElement = document.createElement('video');
           overlayElement.preload = 'auto';
-          overlayElement.src = overlay.path;
+          // Add PUBLIC_URL to ensure correct path resolution in all environments
+          overlayElement.src = `${process.env.PUBLIC_URL}${overlay.path}`;
           
           // Force loading
           overlayElement.load();
