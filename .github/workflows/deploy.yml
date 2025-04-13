@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          lfs: true  # Enable LFS support to get the actual files
 
       - name: Setup Node
         uses: actions/setup-node@v3

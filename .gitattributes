@@ -1,2 +1,6 @@
 # This file is intentionally empty after removing LFS tracking
 # Media files are now tracked directly in the repository
+
+# Explicitly mark media files as not LFS tracked
+*.mp4 -filter=lfs -diff=lfs -merge=lfs -text
+*.webm -filter=lfs -diff=lfs -merge=lfs -text
