@@ -41,13 +41,6 @@
         "opacity": 0.7
       },
       {
-        "id": "f-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
-        "opacity": 0.7
-      },
-      {
         "id": "f-adult",
         "title": "Adult",
         "path": "",
@@ -95,13 +88,6 @@
         "title": "11 Months",
         "path": "/overlays/gw_eleven.webm",
         "ageGroup": "eleven",
-        "opacity": 1.0
-      },
-      {
-        "id": "gw-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
         "opacity": 1.0
       },
       {
@@ -155,13 +141,6 @@
         "opacity": 0.7
       },
       {
-        "id": "gwo-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
-        "opacity": 0.7
-      },
-      {
         "id": "gwo-adult",
         "title": "Adult",
         "path": "/overlays/gwo_adult.webm",
@@ -209,13 +188,6 @@
         "title": "11 Months",
         "path": "/overlays/hw_eleven.webm",
         "ageGroup": "eleven",
-        "opacity": 0.7
-      },
-      {
-        "id": "hw-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
         "opacity": 0.7
       },
       {
@@ -269,13 +241,6 @@
         "opacity": 0.7
       },
       {
-        "id": "hwo-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
-        "opacity": 0.7
-      },
-      {
         "id": "hwo-adult",
         "title": "Adult",
         "path": "/overlays/hwo_adult.webm",
@@ -323,13 +288,6 @@
         "title": "11 Months",
         "path": "/overlays/sw_eleven.webm",
         "ageGroup": "eleven",
-        "opacity": 0.7
-      },
-      {
-        "id": "sw-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
         "opacity": 0.7
       },
       {
@@ -383,13 +341,6 @@
         "opacity": 0.7
       },
       {
-        "id": "swo-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
-        "opacity": 0.7
-      },
-      {
         "id": "swo-adult",
         "title": "Adult",
         "path": "/overlays/swo_adult.webm",
@@ -437,13 +388,6 @@
         "title": "11 Months",
         "path": "/overlays/ugw_eleven.webm",
         "ageGroup": "eleven",
-        "opacity": 0.7
-      },
-      {
-        "id": "ugw-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
         "opacity": 0.7
       },
       {
@@ -497,13 +441,6 @@
         "opacity": 0.7
       },
       {
-        "id": "ugwo-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
-        "opacity": 0.7
-      },
-      {
         "id": "ugwo-adult",
         "title": "Adult",
         "path": "/overlays/ugwo_adult.webm",
@@ -554,13 +491,6 @@
         "opacity": 0.7
       },
       {
-        "id": "uhw-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
-        "opacity": 0.7
-      },
-      {
         "id": "uhw-adult",
         "title": "Adult",
         "path": "/overlays/uhw_adult.webm",
@@ -608,13 +538,6 @@
         "title": "11 Months",
         "path": "/overlays/uhwo_eleven.webm",
         "ageGroup": "eleven",
-        "opacity": 0.7
-      },
-      {
-        "id": "uhwo-twelve",
-        "title": "12 Months",
-        "path": "",
-        "ageGroup": "twelve",
         "opacity": 0.7
       },
       {
