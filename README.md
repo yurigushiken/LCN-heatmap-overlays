@@ -152,6 +152,24 @@ To update the deployment:
 2. Commit and push to GitHub
 3. The GitHub Actions workflow will automatically deploy the changes
 
+### Deployment Notes
+
+If changes don't appear on the live site after pushing to GitHub:
+
+1. **GitHub Actions deployment issue** - Even when workflows report success, they may not correctly update the gh-pages branch
+2. **Solution: Direct deployment** - Use the manual deployment command:
+
+```bash
+npm run deploy
+```
+
+This command builds the project and directly publishes to the gh-pages branch, bypassing GitHub Actions.
+
+3. **Verification** - After deployment, confirm the site displays your changes by checking for:
+   - New UI elements
+   - Updated styling
+   - Changed content
+
 ## Browser Compatibility
 
 This application is compatible with modern browsers that support:
