@@ -1,6 +1,13 @@
 # Media files are tracked directly in the repository, not with LFS
 
-# Explicitly untrack these files from LFS
+# Force Git to store media files as real binary files, not LFS pointers
+*.mp4 binary
+*.webm binary
+*.mov binary
+*.mp3 binary
+
+# Explicitly disable LFS for these files
 *.mp4 -filter=lfs -diff=lfs -merge=lfs -text
 *.webm -filter=lfs -diff=lfs -merge=lfs -text
 *.mov -filter=lfs -diff=lfs -merge=lfs -text
+*.mp3 -filter=lfs -diff=lfs -merge=lfs -text
