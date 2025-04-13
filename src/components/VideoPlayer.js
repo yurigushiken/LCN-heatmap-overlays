@@ -12,10 +12,22 @@ import { useVideo } from "../utils/VideoContext";
 const buildVideoPath = (relativePath) => {
   // Ensure relativePath is treated as a string
   const pathString = String(relativePath || '');
+  
+  // Log input for debugging
+  console.log("buildVideoPath input:", pathString);
+  
+  // Normalize path (ensure it doesn't start with slash)
   const normalizedPath = pathString.startsWith('/') ? pathString.substring(1) : pathString;
+  
   // PUBLIC_URL might be undefined in some setups, default to empty string
   const baseUrl = process.env.PUBLIC_URL || '';
-  return `${baseUrl}/${normalizedPath}`;
+  
+  const fullPath = `${baseUrl}/${normalizedPath}`;
+  
+  // Log output for debugging
+  console.log("buildVideoPath output:", fullPath);
+  
+  return fullPath;
 };
 
 /**
@@ -24,6 +36,7 @@ const buildVideoPath = (relativePath) => {
  */
 const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
   console.log("VideoPlayer rendering with active overlays:", activeOverlays);
+  console.log("VideoPlayer videoSrc:", videoSrc);
   
   // Use only the context videoRef - no local ref needed
   const overlayRefs = useRef({});

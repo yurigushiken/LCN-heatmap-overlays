@@ -31,7 +31,10 @@ export const VideoProvider = ({ children }) => {
       console.log("VideoContext: Attempting to play base video", {
         src: videoRef.current.src?.split('/').pop(),
         readyState: videoRef.current.readyState,
-        paused: videoRef.current.paused
+        paused: videoRef.current.paused,
+        fullSrc: videoRef.current.src, // Log full source for debugging
+        networkState: videoRef.current.networkState, // Add network state info
+        error: videoRef.current.error // Log any existing error
       });
       
       videoRef.current.play().then(() => {
@@ -39,6 +42,14 @@ export const VideoProvider = ({ children }) => {
         setIsPlaying(true);
       }).catch((error) => {
         console.error("VideoContext: Error playing base video:", error);
+        console.error("VideoContext: Error details:", {
+          type: error.name,
+          message: error.message,
+          code: videoRef.current.error?.code,
+          fullSrc: videoRef.current.src,
+          readyState: videoRef.current.readyState,
+          networkState: videoRef.current.networkState
+        });
         // Silent catch - video playback failed
       });
     } else {
@@ -187,9 +198,40 @@ export const VideoProvider = ({ children }) => {
     };
     
     const handleError = () => {
-      console.error("VideoContext: error event", {
-        error: video.error?.message || video.error?.code
-      });
+      const video = videoRef.current;
+      const errorDetails = {
+        code: video.error?.code,
+        message: video.error?.message,
+        src: video.src,
+        currentSrc: video.currentSrc,
+        readyState: video.readyState,
+        networkState: video.networkState
+      };
+      
+      console.error("VideoContext: error event", errorDetails);
+      
+      // Map error codes to messages
+      let errorMessage = "Unknown video error";
+      if (video.error) {
+        switch(video.error.code) {
+          case 1: // MEDIA_ERR_ABORTED
+            errorMessage = "Video playback aborted";
+            break;
+          case 2: // MEDIA_ERR_NETWORK
+            errorMessage = "Network error occurred while loading the video";
+            break;
+          case 3: // MEDIA_ERR_DECODE
+            errorMessage = "Error decoding the video";
+            break;
+          case 4: // MEDIA_ERR_SRC_NOT_SUPPORTED
+            errorMessage = "Video format not supported or video file not found";
+            break;
+          default:
+            errorMessage = "Unknown video error";
+        }
+      }
+      
+      console.error("VideoContext: Error message:", errorMessage);
       setIsLoading(false);
     };
     
