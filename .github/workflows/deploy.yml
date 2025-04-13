@@ -14,6 +14,18 @@ jobs:
         with:
           lfs: true  # Enable LFS support
 
+      - name: Verify LFS checkout and force file conversion
+        run: |
+          git lfs install
+          git lfs pull
+          # Force reading the files to ensure they're properly converted
+          echo "Verifying binary files..."
+          find public/videos -type f -name "*.mp4" -exec cat {} \; > /dev/null
+          find public/overlays -type f -name "*.webm" -exec cat {} \; > /dev/null
+          # Show file sizes to verify they're actually binary
+          ls -lh public/videos/
+          ls -lh public/overlays/
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -29,6 +41,13 @@ jobs:
           REACT_APP_GOOGLE_API_KEY: ${{ secrets.REACT_APP_GOOGLE_API_KEY }}
           REACT_APP_GOOGLE_CLIENT_ID: ${{ secrets.REACT_APP_GOOGLE_CLIENT_ID }}
           REACT_APP_GOOGLE_CLIENT_SECRET: ${{ secrets.REACT_APP_GOOGLE_CLIENT_SECRET }}
+        
+      - name: Verify build output contains binary files
+        run: |
+          echo "Checking build/videos directory:"
+          ls -lh build/videos/
+          echo "Checking build/overlays directory:"
+          ls -lh build/overlays/
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
