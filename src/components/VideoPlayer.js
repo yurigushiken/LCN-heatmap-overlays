@@ -45,7 +45,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
   const [loadedOverlays, setLoadedOverlays] = useState({});
   
   // Get the shared video ref from context
-  const { videoRef, handleTimeUpdate, handleDurationChange } = useVideo();
+  const { videoRef, handleTimeUpdate, handleDurationChange, play } = useVideo();
 
   // Stable callback for assigning refs to prevent ref assignment from causing re-renders
   const getOverlayRef = useCallback((id) => (video) => {
@@ -117,9 +117,24 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     // Clear overlay refs to prevent stale references
     overlayRefs.current = {};
     
-    // Remove autoplay - let user explicitly press play
-    // This avoids potential autoplay blocking issues and follows the consultant's recommendation
-  }, [videoSrc, videoRef]);
+    // Add canplay event listener for auto-play when video source is ready
+    const handleCanPlay = () => {
+      console.log("VideoPlayer: New source ready, attempting autoplay...");
+      // Use the play function from context
+      play();
+      // Remove listener after it's been triggered once
+      video.removeEventListener('canplay', handleCanPlay);
+    };
+    
+    // Add the event listener
+    video.addEventListener('canplay', handleCanPlay);
+    
+    // Clean up function
+    return () => {
+      console.log("Cleaning up video source effect");
+      video.removeEventListener('canplay', handleCanPlay);
+    };
+  }, [videoSrc, videoRef, play]); // Add play to dependency array
 
   // Helper function to get overlay video source - memoized for stability
   const getOverlayVideoSource = useCallback((overlay) => {
