@@ -18,16 +18,16 @@ This project provides a web-based interface for viewing videos with interactive 
 - Filter overlays by age group
 - Select different base videos from dropdown
 - Responsive design for various screen sizes
+- Automatic preloading of all videos for improved performance
 
 ## Project Structure
 
 ```
 LCN-heatmap-overlays/
 ├── public/
-│   ├── videos/
-│   │   └── videos/     # Base MP4 video files (f.mp4, gw.mp4, etc.)
-│   ├── overlays/       # WebM files with alpha channel for overlays (f-seven.webm, etc.)
-│   └── videos.json     # Configuration file for videos and overlays
+│   ├── videos/        # Base MP4 video files (f.mp4, gw.mp4, etc.)
+│   ├── overlays/      # WebM files with alpha channel for overlays (gw_seven.webm, etc.)
+│   └── videos.json    # Configuration file for videos and overlays
 ├── src/
 │   ├── components/
 │   │   ├── App.js              # Main application component
@@ -40,7 +40,9 @@ LCN-heatmap-overlays/
 │   │   └── components/         # Component-specific CSS files
 │   ├── utils/
 │   │   ├── dataUtils.js        # Data loading and processing utilities
-│   │   └── VideoSyncUtils.js   # Video synchronization utilities
+│   │   ├── videoSyncUtils.js   # Video synchronization utilities
+│   │   ├── VideoContext.js     # Video state management
+│   │   └── videoCache.js       # Video preloading functionality
 │   └── index.js                # Application entry point
 └── package.json                # Project dependencies and scripts
 ```
@@ -49,7 +51,7 @@ LCN-heatmap-overlays/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/LCN-heatmap-overlays.git
+   git clone https://github.com/yurigushiken/LCN-heatmap-overlays.git
    cd LCN-heatmap-overlays
    ```
 
@@ -78,7 +80,7 @@ LCN-heatmap-overlays/
 
 ### Base Videos
 
-The application uses base videos stored in `public/videos/videos/`. These are MP4 files with the following naming pattern:
+The application uses base videos stored in `public/videos/`. These are MP4 files with the following naming pattern:
 
 - `f.mp4` - Floating toy
 - `gw.mp4` - Give with toy
@@ -94,12 +96,10 @@ The application uses base videos stored in `public/videos/videos/`. These are MP
 
 ### Overlay Videos
 
-Overlay videos are WebM files with alpha channel transparency, stored in `public/overlays/`. These follow a naming pattern of `[event-type]-[age-group].webm`, such as:
+Overlay videos are WebM files with alpha channel transparency, stored in `public/overlays/`. These follow a naming pattern of `[event-type]_[age-group].webm`, such as:
 
-- `f-seven.webm` - Floating toy, 7-month age group
-- `gw-adult.webm` - Give with toy, adult age group
-
-See `public/overlays/README.md` for the complete list of expected overlay files.
+- `gw_seven.webm` - Give with toy, 7-month age group
+- `gw_adult.webm` - Give with toy, adult age group
 
 ## Configuration
 
@@ -116,31 +116,19 @@ The `videos.json` file in the public directory contains the configuration for al
   - `ageGroup`: Category for filtering (e.g., "seven", "adult")
   - `opacity`: Transparency level (0-1)
 
+## Performance
+
+The application automatically preloads all videos when first loaded to ensure smooth playback. Videos are cached in the browser for improved performance on subsequent viewing.
+
 ## Deployment
 
-To deploy this application to GitHub Pages:
+The application is deployed to GitHub Pages at: https://yurigushiken.github.io/LCN-heatmap-overlays/
 
-1. Update the `package.json` file to include:
-   ```json
-   "homepage": "https://your-username.github.io/LCN-heatmap-overlays",
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
-     ...
-   }
-   ```
+To update the deployment:
 
-2. Install the gh-pages package:
-   ```
-   npm install --save-dev gh-pages
-   ```
-
-3. Deploy the application:
-   ```
-   npm run deploy
-   ```
-
-See [GITHUB-SETUP.md](./GITHUB-SETUP.md) for detailed instructions on setting up GitHub Pages.
+1. Make changes to the code
+2. Commit and push to GitHub
+3. The GitHub Actions workflow will automatically deploy the changes
 
 ## Browser Compatibility
 
