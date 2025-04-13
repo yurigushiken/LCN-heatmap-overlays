@@ -22,6 +22,9 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
   // Get the shared video ref from context
   const { videoRef, handleTimeUpdate, handleDurationChange } = useVideo();
 
+  // Process video source to ensure it works in all environments
+  const processedVideoSrc = videoSrc ? `${process.env.PUBLIC_URL}${videoSrc}` : '';
+  
   // Stable callback for assigning refs to prevent ref assignment from causing re-renders
   const getOverlayRef = useCallback((id) => (video) => {
     if (video) {
@@ -75,10 +78,10 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     const video = videoRef.current;
     if (!video || !videoSrc) return;
 
-    console.log(`Updating base video source: ${videoSrc}`);
+    console.log(`Updating base video source: ${processedVideoSrc}`);
     
-    // Update source
-    video.src = videoSrc;
+    // Update source with properly processed path
+    video.src = processedVideoSrc;
     video.load();
     
     console.log("Reset overlay state and refs due to video source change");
@@ -91,7 +94,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     
     // Remove autoplay - let user explicitly press play
     // This avoids potential autoplay blocking issues and follows the consultant's recommendation
-  }, [videoSrc, videoRef]);
+  }, [videoSrc, videoRef, processedVideoSrc]);
 
   // Helper function to get overlay video source - memoized for stability
   const getOverlayVideoSource = useCallback((overlay) => {
@@ -100,7 +103,8 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     if (!path || path.trim() === '') {
       return null;
     }
-    return path;
+    // Ensure path has the correct base URL for all environments
+    return `${process.env.PUBLIC_URL}${path}`;
   }, []);
 
   // Set up synchronization between base video and overlay videos with a slight delay
@@ -232,7 +236,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
         loop
         preload="auto"
       >
-        <source src={videoSrc} type="video/mp4" />
+        <source src={processedVideoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

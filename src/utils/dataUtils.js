@@ -6,14 +6,32 @@
  */
 export const fetchVideos = async () => {
   try {
+    // Add debug logging before fetch
+    console.log(`Fetching videos from: ${process.env.PUBLIC_URL}/videos.json`);
+    
     const response = await fetch(`${process.env.PUBLIC_URL}/videos.json`);
+    
+    // Log response status
+    console.log(`Fetch response status: ${response.status}`);
+    
     if (!response.ok) {
       throw new Error("HTTP error! status: " + response.status);
     }
+    
     const data = await response.json();
+    
+    // Log successful data load
+    console.log(`Successfully loaded video data with ${data.length} videos`);
+    
     return data;
   } catch (error) {
+    // More detailed error logging
     console.error("Error fetching video data:", error);
+    console.error("Error details:", {
+      message: error.message,
+      stack: error.stack,
+      type: error.constructor.name
+    });
     return [];
   }
 };
