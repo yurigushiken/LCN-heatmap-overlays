@@ -94,8 +94,17 @@ function App() {
     <VideoProvider>
       <div className="app-container">
         <header className="app-header">
-          <h1 className="app-title">Infant Event Representations Heatmap Overlay Viewer</h1>
-          <p className="app-description">Language and Cognitive Neuroscience Lab</p>
+          <div className="header-content">
+            <div className="header-main">
+              <h1 className="app-title">Infant Event Representations Heatmap Overlay Viewer</h1>
+              <p className="app-description">Language and Cognitive Neuroscience Lab</p>
+            </div>
+            <div className="header-links">
+              <a href="https://github.com/yurigushiken/LCN-heatmap-overlays" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <span className="link-separator">|</span>
+              <a href="https://yurigushiken.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+            </div>
+          </div>
         </header>
         
         <main className="main-content">
