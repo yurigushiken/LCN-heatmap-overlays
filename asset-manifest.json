@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/LCN-heatmap-overlays/static/css/main.e6b30f25.css",
-    "main.js": "/LCN-heatmap-overlays/static/js/main.5cd9b2ce.js",
-    "index.html": "/LCN-heatmap-overlays/index.html",
-    "main.e6b30f25.css.map": "/LCN-heatmap-overlays/static/css/main.e6b30f25.css.map",
-    "main.5cd9b2ce.js.map": "/LCN-heatmap-overlays/static/js/main.5cd9b2ce.js.map"
+    "main.css": "./static/css/main.e6b30f25.css",
+    "main.js": "./static/js/main.c90d7d30.js",
+    "index.html": "./index.html",
+    "main.e6b30f25.css.map": "./static/css/main.e6b30f25.css.map",
+    "main.c90d7d30.js.map": "./static/js/main.c90d7d30.js.map"
   },
   "entrypoints": [
     "static/css/main.e6b30f25.css",
-    "static/js/main.5cd9b2ce.js"
+    "static/js/main.c90d7d30.js"
   ]
 }
