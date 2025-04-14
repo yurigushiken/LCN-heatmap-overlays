@@ -30,8 +30,9 @@ function App() {
         }
         
         setVideoData(data);
-        // Set initial video selection
-        setSelectedVideo(data[0]);
+        // Set initial video selection to "Give with Toy" (gw)
+        const initialVideo = data.find(v => v.id === 'gw') || data[0];
+        setSelectedVideo(initialVideo);
         
         // Re-enabled preloading all videos
         preloadVideos(data);
@@ -90,6 +91,9 @@ function App() {
     );
   }
 
+  // Filter out "Floating Toy" (id: 'f') from dropdown options
+  const dropdownVideos = videoData.filter(video => video.id !== 'f');
+
   return (
     <VideoProvider>
       <div className="app-container">
@@ -110,7 +114,7 @@ function App() {
         <main className="main-content">
           <aside className="sidebar">
             <ControlPanel 
-              videos={videoData}
+              videos={dropdownVideos}
               selectedVideo={selectedVideo}
               onSelectVideo={handleVideoSelect}
             />
