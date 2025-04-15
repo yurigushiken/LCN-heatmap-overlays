@@ -7,6 +7,15 @@
   position: relative; /* For positioning the keyboard hint */
 }
 
+/* Carousel title */
+.carousel-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 /* Add visual feedback when carousel is focused */
 .glide-carousel-container:focus {
   box-shadow: 0 0 0 2px rgba(52, 103, 81, 0.8); /* Green glow matching video controls */
@@ -23,7 +32,7 @@
 }
 
 .glide__slide {
-  height: 600px; /* Increased height */
+  height: 650px; /* Increased height to accommodate captions */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +46,7 @@
   padding: 0; /* No padding */
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -45,13 +55,32 @@
 
 .image-frame img {
   max-width: 100%; /* Full width */
-  max-height: 600px; /* Increased max height */
+  max-height: 550px; /* Reduced to make room for caption */
   width: auto;
   height: auto;
   object-fit: contain;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   will-change: transform; /* Performance optimization */
+}
+
+/* Image caption styling */
+.image-caption {
+  width: 90%;
+  max-width: 800px;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: rgba(245, 245, 245, 0.9);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+  text-align: center;
 }
 
 /* Keyboard hint styling */

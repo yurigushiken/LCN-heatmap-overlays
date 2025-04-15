@@ -4,7 +4,7 @@ import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import '../styles/components/GlideCarousel.css';
 
-const GlideCarousel = ({ images, title, startIndex = 0, onSlideChange }) => {
+const GlideCarousel = ({ images, title, startIndex = 0, onSlideChange, showCaptions = false }) => {
   const glideRef = useRef(null);
   const containerRef = useRef(null);
   const glideInstanceRef = useRef(null);
@@ -93,7 +93,7 @@ const GlideCarousel = ({ images, title, startIndex = 0, onSlideChange }) => {
       ref={containerRef}
       onKeyDown={handleGlideKeyDown}
     >
-      {/* Title/caption removed */}
+      {title && <h3 className="carousel-title">{title}</h3>}
       
       <div className="glide" ref={glideRef}>
         <div className="glide__track" data-glide-el="track">
@@ -105,6 +105,11 @@ const GlideCarousel = ({ images, title, startIndex = 0, onSlideChange }) => {
                     src={image.src} 
                     alt={image.alt || `Slide ${index + 1}`} 
                   />
+                  {showCaptions && image.caption && (
+                    <div className="image-caption">
+                      <p>{image.caption}</p>
+                    </div>
+                  )}
                 </div>
               </li>
             ))}

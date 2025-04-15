@@ -10,6 +10,7 @@ const PresentationSection = ({ presentationsData }) => {
   );
   const [selectedPresentationEventId, setSelectedPresentationEventId] = useState(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [showCaptions, setShowCaptions] = useState(false);
 
   // Memoize derived data to prevent unnecessary recalculations
   const availableAnalysisTypes = useMemo(() =>
@@ -73,6 +74,10 @@ const PresentationSection = ({ presentationsData }) => {
     setCurrentSlideIndex(index);
   }, []);
 
+  const toggleCaptions = useCallback(() => {
+    setShowCaptions(prevState => !prevState);
+  }, []);
+
   if (!presentationsData || availableAnalysisTypes.length === 0) {
     return <div className="presentation-section">No presentation data available.</div>;
   }
@@ -88,14 +93,25 @@ const PresentationSection = ({ presentationsData }) => {
           onAnalysisChange={handleAnalysisChange}
           onEventChange={handleEventChange}
         />
+        <div className="presentation-controls">
+          <button 
+            className={`caption-toggle ${showCaptions ? 'active' : ''}`}
+            onClick={toggleCaptions}
+            title={showCaptions ? "Hide captions" : "Show captions"}
+          >
+            {showCaptions ? "Hide Captions" : "Show Captions"}
+          </button>
+        </div>
       </div>
       <div className="presentation-content">
         {currentPresentation ? (
           <PresentationViewer
             title={currentPresentation.presentationTitle}
             plots={currentPlots}
+            directoryPath={currentPresentation.directoryPath}
             currentSlideIndex={currentSlideIndex}
             onSlideChange={handleSlideChange}
+            showCaptions={showCaptions}
           />
         ) : (
           <p>Select an analysis and event to view plots.</p>

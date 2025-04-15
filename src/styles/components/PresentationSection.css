@@ -1,20 +1,47 @@
 /* src/styles/components/PresentationSection.css */
 
 .presentation-section {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
-}
-
-.presentation-header {
-  background-color: #333;
-  border-radius: 8px;
-  padding: 10px;
+  margin: 20px 0;
   width: 100%;
 }
 
+.presentation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.presentation-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.caption-toggle {
+  background-color: #333;
+  color: #ddd;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.caption-toggle:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.caption-toggle.active {
+  background-color: #2a5a43;
+  color: white;
+  border-color: #2a5a43;
+}
+
 .presentation-content {
-  padding: 0;
   width: 100%;
 } 

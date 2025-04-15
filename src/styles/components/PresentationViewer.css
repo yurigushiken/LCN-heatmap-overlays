@@ -12,4 +12,11 @@
     color: #aaa;
     font-style: italic;
     padding: 20px;
+}
+
+.loading-message {
+    color: #aaa;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
 } 
