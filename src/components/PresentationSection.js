@@ -9,6 +9,7 @@ const PresentationSection = ({ presentationsData }) => {
     presentationsData?.analysisTypes?.[0]?.id || null
   );
   const [selectedPresentationEventId, setSelectedPresentationEventId] = useState(null);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   // Memoize derived data to prevent unnecessary recalculations
   const availableAnalysisTypes = useMemo(() =>
@@ -68,6 +69,10 @@ const PresentationSection = ({ presentationsData }) => {
     setSelectedPresentationEventId(eventId);
   }, []);
 
+  const handleSlideChange = useCallback((index) => {
+    setCurrentSlideIndex(index);
+  }, []);
+
   if (!presentationsData || availableAnalysisTypes.length === 0) {
     return <div className="presentation-section">No presentation data available.</div>;
   }
@@ -87,9 +92,10 @@ const PresentationSection = ({ presentationsData }) => {
       <div className="presentation-content">
         {currentPresentation ? (
           <PresentationViewer
-            key={selectedPresentationEventId} // Force remount on event change to clear scroll
             title={currentPresentation.presentationTitle}
             plots={currentPlots}
+            currentSlideIndex={currentSlideIndex}
+            onSlideChange={handleSlideChange}
           />
         ) : (
           <p>Select an analysis and event to view plots.</p>

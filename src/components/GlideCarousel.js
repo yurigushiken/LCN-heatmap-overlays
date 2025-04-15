@@ -4,7 +4,7 @@ import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import '../styles/components/GlideCarousel.css';
 
-const GlideCarousel = ({ images, title }) => {
+const GlideCarousel = ({ images, title, startIndex = 0, onSlideChange }) => {
   const glideRef = useRef(null);
   const containerRef = useRef(null);
   const glideInstanceRef = useRef(null);
@@ -41,7 +41,7 @@ const GlideCarousel = ({ images, title }) => {
     if (glideRef.current && images && images.length > 0) {
       const glide = new Glide(glideRef.current, {
         type: 'carousel',
-        startAt: 0,
+        startAt: startIndex, // Use the provided startIndex
         perView: 1,
         gap: 0,
         animationDuration: 250, // Increased from 100ms to 250ms for smoother animation
@@ -50,6 +50,13 @@ const GlideCarousel = ({ images, title }) => {
         keyboard: false, // Disable Glide's built-in keyboard handling
         rewind: false // Prevent rewinding which can cause delays
       });
+      
+      // Add event listener for slide changes if callback provided
+      if (typeof onSlideChange === 'function') {
+        glide.on('run.after', () => {
+          onSlideChange(glide.index);
+        });
+      }
       
       glide.mount();
       glideInstanceRef.current = glide; // Store instance in ref
@@ -60,7 +67,7 @@ const GlideCarousel = ({ images, title }) => {
         glideInstanceRef.current = null;
       };
     }
-  }, [images]);
+  }, [images, startIndex, onSlideChange]);
 
   // Focus the carousel container
   const focusCarousel = () => {

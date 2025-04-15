@@ -4,7 +4,7 @@ import { resolvePresentationAssetPath } from '../utils/urlUtils';
 import GlideCarousel from './GlideCarousel';
 import '../styles/components/PresentationViewer.css';
 
-const PresentationViewer = ({ title, plots }) => {
+const PresentationViewer = ({ title, plots, currentSlideIndex = 0, onSlideChange }) => {
   if (!plots || plots.length === 0) {
     return <p className="no-plots-message">No plots available for this selection.</p>;
   }
@@ -17,7 +17,12 @@ const PresentationViewer = ({ title, plots }) => {
 
   return (
     <div className="presentation-viewer">
-      <GlideCarousel images={formattedImages} title={title} />
+      <GlideCarousel 
+        images={formattedImages} 
+        title={title} 
+        startIndex={currentSlideIndex}
+        onSlideChange={onSlideChange}
+      />
     </div>
   );
 };
