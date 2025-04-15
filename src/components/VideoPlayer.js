@@ -109,13 +109,13 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
     video.src = processedVideoSrc;
     video.load();
     
-    console.log("Reset overlay state and refs due to video source change");
+    console.log("Reset overlay state due to video source change");
     
     // Reset overlay state when video source changes
     setLoadedOverlays({});
     
-    // Clear overlay refs to prevent stale references
-    overlayRefs.current = {};
+    // Do NOT clear overlay refs - this was causing the sync issues
+    // overlayRefs.current = {};  <- REMOVED
     
     // Add canplay event listener for auto-play when video source is ready
     const handleCanPlay = () => {
@@ -134,7 +134,7 @@ const VideoPlayer = ({ videoSrc, activeOverlays, overlayData }) => {
       console.log("Cleaning up video source effect");
       video.removeEventListener('canplay', handleCanPlay);
     };
-  }, [videoSrc, videoRef, play]); // Add play to dependency array
+  }, [videoSrc, videoRef, play]);
 
   // Helper function to get overlay video source - memoized for stability
   const getOverlayVideoSource = useCallback((overlay) => {
