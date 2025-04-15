@@ -1,0 +1,5 @@
+age_group,shift_frame_mean,shift_frame_median,shift_frame_min,shift_frame_max,shift_frame_std,shift_frame_count,percent_significant
+eight,148.0,148.0,148.0,148.0,,1,100.0
+nine,148.0,148.0,148.0,148.0,,1,0.0
+ten,142.0,142.0,142.0,142.0,,1,100.0
+twelve,145.0,145.0,145.0,145.0,,1,0.0

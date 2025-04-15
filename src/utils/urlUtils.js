@@ -5,15 +5,20 @@
 
 /**
  * Determines the base URL for assets based on the current environment
- * - Returns '' (empty string) for local development
- * - Returns '/LCN-heatmap-overlays' for GitHub Pages
+ * - Checks the actual URL path we're running under, not just the hostname
+ * - Returns the correct base path for both local development and GitHub Pages
  */
 export const getBaseUrl = () => {
-  // Check if we're running on localhost (development) or GitHub Pages (production)
-  return window.location.hostname === 'localhost' || 
-         window.location.hostname === '127.0.0.1' 
-         ? '' 
-         : '/LCN-heatmap-overlays';
+  // Get the base path from the current URL
+  const pathname = window.location.pathname;
+  
+  // Check if we're running under the GitHub Pages path
+  if (pathname.includes('/LCN-heatmap-overlays')) {
+    return '/LCN-heatmap-overlays';
+  }
+  
+  // If not, we're at the root (in pure development mode)
+  return '';
 };
 
 /**
@@ -33,4 +38,21 @@ export const resolvePath = (path) => {
   
   // Handle paths without a leading slash
   return `${baseUrl}/${path}`;
+}; 
+
+/**
+ * Resolves a presentation asset path relative to the public directory.
+ * @param {string} relativePath - The relative path from the manifest (e.g., /presentations/...)
+ * @returns {string} The full path usable in <img> src.
+ */
+export const resolvePresentationAssetPath = (relativePath) => {
+  if (!relativePath) return '';
+  
+  console.log('Asset path input:', relativePath);
+  
+  // Use the existing resolvePath function which is known to work correctly
+  const result = resolvePath(relativePath);
+  
+  console.log('Asset path resolved:', result);
+  return result;
 }; 

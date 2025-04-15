@@ -1,0 +1,15 @@
+/* src/styles/components/PresentationViewer.css */
+.presentation-viewer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.no-plots-message {
+    color: #aaa;
+    font-style: italic;
+    padding: 20px;
+} 

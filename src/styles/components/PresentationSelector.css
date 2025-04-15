@@ -1,0 +1,65 @@
+/* src/styles/components/PresentationSelector.css */
+
+.presentation-selector-panel {
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.selector-header {
+  margin-right: 20px;
+}
+
+.presentation-selector-panel h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.selector-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+}
+
+.selector-group {
+  margin: 0 15px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.selector-group label {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.selector-group select {
+  min-width: 200px;
+  padding: 6px 10px;
+  background-color: #444;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.selector-group select:focus {
+  border-color: #6a9fff;
+}
+
+.selector-group select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.selector-group select option {
+  background-color: #444;
+  color: #ffffff;
+} 

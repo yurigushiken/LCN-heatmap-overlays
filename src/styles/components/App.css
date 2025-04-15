@@ -10,6 +10,67 @@
   color: #f0f0f0;
 }
 
+/* Password Prompt Styles */
+.password-prompt {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #333333;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.password-prompt h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.password-input:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.3);
+}
+
+.password-submit {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.password-submit:hover {
+  background-color: #4ec2f7;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
 .app-header {
   margin-bottom: 24px;
 }
@@ -104,6 +165,13 @@
   font-size: 14px;
   color: #cccccc;
   clear: both;
+}
+
+/* Presentation Section Container */
+.presentation-section-container {
+  margin-top: 40px; /* Space above the new section */
+  padding-top: 20px;
+  border-top: 1px solid #444; /* Separator line */
 }
 
 @media (max-width: 768px) {

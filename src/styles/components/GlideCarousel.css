@@ -1,0 +1,135 @@
+/* src/styles/components/GlideCarousel.css */
+.glide-carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  outline: none; /* Remove default focus outline */
+  transition: box-shadow 0.2s ease; /* Smooth transition for focus */
+  position: relative; /* For positioning the keyboard hint */
+}
+
+/* Add visual feedback when carousel is focused */
+.glide-carousel-container:focus {
+  box-shadow: 0 0 0 2px rgba(52, 103, 81, 0.8); /* Green glow matching video controls */
+  border-radius: 4px;
+}
+
+/* Smoother slide transitions */
+.glide__track {
+  overflow: hidden;
+}
+
+.glide__slides {
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0) !important; /* Ensure smooth easing */
+}
+
+.glide__slide {
+  height: 600px; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform; /* Performance optimization */
+  backface-visibility: hidden; /* Performance optimization */
+  transform-style: preserve-3d; /* Additional smoothness for animations */
+  perspective: 1000px; /* Additional smoothness for animations */
+}
+
+.image-frame {
+  padding: 0; /* No padding */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-frame img {
+  max-width: 100%; /* Full width */
+  max-height: 600px; /* Increased max height */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  will-change: transform; /* Performance optimization */
+}
+
+/* Keyboard hint styling */
+.carousel-keyboard-hint {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 10px;
+  padding: 4px 0;
+  background-color: rgba(40, 40, 40, 0.7);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show hint when container is focused */
+.glide-carousel-container:focus .carousel-keyboard-hint,
+.glide-carousel-container:hover .carousel-keyboard-hint {
+  opacity: 1;
+}
+
+/* Custom styling for Glide arrows */
+.glide__arrow {
+  background-color: rgba(35, 35, 35, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  padding: 0;
+  text-align: center;
+  transition: all 0.2s ease; /* Faster transition */
+  z-index: 100; /* Ensure arrows appear above images */
+  user-select: none; /* Prevent text selection during rapid clicking */
+}
+
+.glide__arrow:hover {
+  background-color: rgba(60, 60, 60, 0.9);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Improve visual feedback for active state */
+.glide__arrow:active {
+  transform: scale(0.95);
+  background-color: rgba(70, 70, 70, 0.9);
+}
+
+/* Adjust arrow positioning */
+.glide__arrow--left {
+  left: 10px; /* Moved closer to edge */
+}
+
+.glide__arrow--right {
+  right: 10px; /* Moved closer to edge */
+}
+
+/* Custom styling for pagination bullets */
+.glide__bullets {
+  bottom: -20px;
+}
+
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  transition: all 0.2s ease; /* Faster transition */
+  user-select: none; /* Prevent text selection during rapid clicking */
+}
+
+.glide__bullet:hover,
+.glide__bullet:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.glide__bullet--active {
+  background-color: rgba(255, 255, 255, 0.9);
+} 

@@ -4,6 +4,12 @@
   padding: 10px;
   margin-top: 15px;
   width: 100%;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.video-controls:focus {
+  box-shadow: 0 0 0 2px #346751;
 }
 
 .controls-title {
@@ -149,4 +155,38 @@
 
 .speed-button.active:hover {
   background-color: #2a563f;
+}
+
+/* Add styles for keyboard shortcut hints */
+.keyboard-hints {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #aaa;
+  flex-wrap: wrap;
+}
+
+.keyboard-hint {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.key {
+  background-color: #444;
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+/* Add styles for keyboard shortcut hints note */
+.keyboard-hints-note {
+  text-align: center;
+  font-size: 10px;
+  color: #888;
+  margin-top: 5px;
+  font-style: italic;
 } 

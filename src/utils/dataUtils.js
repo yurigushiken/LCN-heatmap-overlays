@@ -72,3 +72,35 @@ export const filterOverlaysByAgeGroup = (video, selectedAgeGroup) => {
     overlay.ageGroup === selectedAgeGroup
   );
 };
+
+/**
+ * Fetch presentation manifest data from JSON file
+ * @returns {Promise<Object>} Object containing analysis types and their plots
+ */
+export const fetchPresentationsManifest = async () => {
+  try {
+    const manifestUrl = `${process.env.PUBLIC_URL}/presentations/presentations_manifest.json`;
+    console.log(`Fetching presentation manifest from: ${manifestUrl}`);
+
+    const response = await fetch(manifestUrl);
+
+    console.log(`Fetch presentation manifest response status: ${response.status}`);
+
+    if (!response.ok) {
+      throw new Error("HTTP error fetching presentation manifest! status: " + response.status);
+    }
+
+    const data = await response.json();
+
+    console.log(`Successfully loaded presentation manifest data`);
+    return data;
+  } catch (error) {
+    console.error("Error fetching presentation manifest data:", error);
+    console.error("Error details:", {
+      message: error.message,
+      stack: error.stack,
+      type: error.constructor.name
+    });
+    return { analysisTypes: [] }; // Return empty structure on error
+  }
+};
