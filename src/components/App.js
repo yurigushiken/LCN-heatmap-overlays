@@ -197,8 +197,9 @@ function App() {
     }
   };
 
-  // Password prompt component
-  const PasswordPrompt = () => {
+  // **** Authentication Check FIRST ****
+  if (!isAuthenticated) {
+    // Render password prompt immediately if not authenticated
     return (
       <div className="app-container">
         <div className="password-prompt">
@@ -220,13 +221,15 @@ function App() {
         </div>
       </div>
     );
-  };
+  }
 
-  // Update loading/error checks to include presentations
+  // **** If Authenticated, Handle Loading States ****
+  // Check loading states ONLY if authenticated
   if (loading || presentationsLoading) {
     return <div className="app-container"><div className="loading">Loading data...</div></div>;
   }
 
+  // **** If Authenticated and Not Loading, Handle Errors ****
   if (error || presentationsError) {
     return (
       <div className="app-container">
@@ -240,10 +243,7 @@ function App() {
     );
   }
 
-  // Check authentication before showing content
-  if (!isAuthenticated) {
-    return <PasswordPrompt />;
-  }
+  // **** If Authenticated, Not Loading, No Errors: Render Main App ****
 
   // Filter out "Floating Toy" (id: 'f') from dropdown options
   const dropdownVideos = videoData.filter(video => video.id !== 'f');
