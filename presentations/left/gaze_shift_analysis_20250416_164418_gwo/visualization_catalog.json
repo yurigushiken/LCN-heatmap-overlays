@@ -1,0 +1,345 @@
+[
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\01_baseline_age_timeseries_02_seven_20250416_164418.png",
+    "plot_type": "01_baseline_age_timeseries",
+    "description": "Time series of the proportion of participants looking left over time for age group 'seven'. The blue line shows the proportion at each frame with 95% CI (gray area). The dotted red horizontal line indicates the calculated statistical threshold (0.58) for detecting a significant shift (baseline mean + 2.00*SD). The dashed purple line shows the baseline mean (0.43) during the baseline period (frames 0-5). The solid red vertical line marks the first significant shift frame (15). The green solid line indicates the First Body Frame at frame 6.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "seven",
+    "created_at": "2025-04-16T16:44:19.001200",
+    "metadata": {
+      "age_group": "seven",
+      "shift_frame": 15,
+      "threshold": 0.5773809523809523,
+      "proportion_looking_left": 0.75,
+      "baseline_mean": 0.42738095238095236,
+      "baseline_std": 0.04056363104143053,
+      "is_significant": true,
+      "p_value": 0.023875646083159174,
+      "test_method": "chi_square",
+      "baseline_max_frame": 5,
+      "first_body_frame": 6,
+      "entry_frame": 15
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\05_proportion_change_timeseries_02_seven_20250416_164418.png",
+    "plot_type": "05_proportion_change_timeseries",
+    "description": "Time series showing the rate of change (derivative) of the looking-left proportion for age group 'seven'. The blue line indicates the frame-by-frame change in proportion. Peaks indicate rapid increases in looking left.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "seven",
+    "created_at": "2025-04-16T16:44:19.288042",
+    "metadata": {
+      "entry_frame": 15,
+      "window_size": 3
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\01_baseline_age_timeseries_03_eight_20250416_164418.png",
+    "plot_type": "01_baseline_age_timeseries",
+    "description": "Time series of the proportion of participants looking left over time for age group 'eight'. The blue line shows the proportion at each frame with 95% CI (gray area). The dotted red horizontal line indicates the calculated statistical threshold (0.46) for detecting a significant shift (baseline mean + 2.00*SD). The dashed purple line shows the baseline mean (0.31) during the baseline period (frames 0-5). The solid red vertical line marks the first significant shift frame (15). The green solid line indicates the First Body Frame at frame 6.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "eight",
+    "created_at": "2025-04-16T16:44:19.870447",
+    "metadata": {
+      "age_group": "eight",
+      "shift_frame": 15,
+      "threshold": 0.45994259363824586,
+      "proportion_looking_left": 0.5454545454545454,
+      "baseline_mean": 0.30994259363824583,
+      "baseline_std": 0.031091173168784656,
+      "is_significant": true,
+      "p_value": 0.016913306964074226,
+      "test_method": "chi_square",
+      "baseline_max_frame": 5,
+      "first_body_frame": 6,
+      "entry_frame": 15
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\05_proportion_change_timeseries_03_eight_20250416_164418.png",
+    "plot_type": "05_proportion_change_timeseries",
+    "description": "Time series showing the rate of change (derivative) of the looking-left proportion for age group 'eight'. The blue line indicates the frame-by-frame change in proportion. Peaks indicate rapid increases in looking left.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "eight",
+    "created_at": "2025-04-16T16:44:20.174807",
+    "metadata": {
+      "entry_frame": 15,
+      "window_size": 3
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\01_baseline_age_timeseries_04_nine_20250416_164418.png",
+    "plot_type": "01_baseline_age_timeseries",
+    "description": "Time series of the proportion of participants looking left over time for age group 'nine'. The blue line shows the proportion at each frame with 95% CI (gray area). The dotted red horizontal line indicates the calculated statistical threshold (0.51) for detecting a significant shift (baseline mean + 2.00*SD). The dashed purple line shows the baseline mean (0.36) during the baseline period (frames 0-5). The solid red vertical line marks the first significant shift frame (16). The green solid line indicates the First Body Frame at frame 6.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "nine",
+    "created_at": "2025-04-16T16:44:20.781956",
+    "metadata": {
+      "age_group": "nine",
+      "shift_frame": 16,
+      "threshold": 0.5148266516092603,
+      "proportion_looking_left": 0.64,
+      "baseline_mean": 0.3648266516092603,
+      "baseline_std": 0.07246990103135198,
+      "is_significant": true,
+      "p_value": 0.004261017316898541,
+      "test_method": "chi_square",
+      "baseline_max_frame": 5,
+      "first_body_frame": 6,
+      "entry_frame": 16
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\05_proportion_change_timeseries_04_nine_20250416_164418.png",
+    "plot_type": "05_proportion_change_timeseries",
+    "description": "Time series showing the rate of change (derivative) of the looking-left proportion for age group 'nine'. The blue line indicates the frame-by-frame change in proportion. Peaks indicate rapid increases in looking left.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "nine",
+    "created_at": "2025-04-16T16:44:21.093603",
+    "metadata": {
+      "entry_frame": 16,
+      "window_size": 3
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\01_baseline_age_timeseries_05_ten_20250416_164418.png",
+    "plot_type": "01_baseline_age_timeseries",
+    "description": "Time series of the proportion of participants looking left over time for age group 'ten'. The blue line shows the proportion at each frame with 95% CI (gray area). The dotted red horizontal line indicates the calculated statistical threshold (0.45) for detecting a significant shift (baseline mean + 2.00*SD). The dashed purple line shows the baseline mean (0.30) during the baseline period (frames 0-5). The solid red vertical line marks the first significant shift frame (14). The green solid line indicates the First Body Frame at frame 6.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "ten",
+    "created_at": "2025-04-16T16:44:21.679256",
+    "metadata": {
+      "age_group": "ten",
+      "shift_frame": 14,
+      "threshold": 0.4478197997775306,
+      "proportion_looking_left": 0.625,
+      "baseline_mean": 0.2978197997775306,
+      "baseline_std": 0.033294091442748724,
+      "is_significant": true,
+      "p_value": 5.1821031606058554e-05,
+      "test_method": "chi_square",
+      "baseline_max_frame": 5,
+      "first_body_frame": 6,
+      "entry_frame": 14
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\05_proportion_change_timeseries_05_ten_20250416_164418.png",
+    "plot_type": "05_proportion_change_timeseries",
+    "description": "Time series showing the rate of change (derivative) of the looking-left proportion for age group 'ten'. The blue line indicates the frame-by-frame change in proportion. Peaks indicate rapid increases in looking left.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "ten",
+    "created_at": "2025-04-16T16:44:22.021349",
+    "metadata": {
+      "entry_frame": 14,
+      "window_size": 3
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\01_baseline_age_timeseries_06_eleven_20250416_164418.png",
+    "plot_type": "01_baseline_age_timeseries",
+    "description": "Time series of the proportion of participants looking left over time for age group 'eleven'. The blue line shows the proportion at each frame with 95% CI (gray area). The dotted red horizontal line indicates the calculated statistical threshold (0.52) for detecting a significant shift (baseline mean + 2.00*SD). The dashed purple line shows the baseline mean (0.37) during the baseline period (frames 0-5). The solid red vertical line marks the first significant shift frame (15). The green solid line indicates the First Body Frame at frame 6.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "eleven",
+    "created_at": "2025-04-16T16:44:22.523523",
+    "metadata": {
+      "age_group": "eleven",
+      "shift_frame": 15,
+      "threshold": 0.5195238095238095,
+      "proportion_looking_left": 0.6190476190476191,
+      "baseline_mean": 0.3695238095238095,
+      "baseline_std": 0.03394005653562947,
+      "is_significant": true,
+      "p_value": 0.01783598502007344,
+      "test_method": "chi_square",
+      "baseline_max_frame": 5,
+      "first_body_frame": 6,
+      "entry_frame": 15
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\05_proportion_change_timeseries_06_eleven_20250416_164418.png",
+    "plot_type": "05_proportion_change_timeseries",
+    "description": "Time series showing the rate of change (derivative) of the looking-left proportion for age group 'eleven'. The blue line indicates the frame-by-frame change in proportion. Peaks indicate rapid increases in looking left.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "eleven",
+    "created_at": "2025-04-16T16:44:22.839216",
+    "metadata": {
+      "entry_frame": 15,
+      "window_size": 3
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\01_baseline_age_timeseries_07_twelve_20250416_164418.png",
+    "plot_type": "01_baseline_age_timeseries",
+    "description": "Time series of the proportion of participants looking left over time for age group 'twelve'. The blue line shows the proportion at each frame with 95% CI (gray area). The dotted red horizontal line indicates the calculated statistical threshold (0.88) for detecting a significant shift (baseline mean + 2.00*SD). The dashed purple line shows the baseline mean (0.63) during the baseline period (frames 0-5). The solid red vertical line marks the first significant shift frame (134). The green solid line indicates the First Body Frame at frame 6.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "twelve",
+    "created_at": "2025-04-16T16:44:23.258966",
+    "metadata": {
+      "age_group": "twelve",
+      "shift_frame": 134,
+      "threshold": 0.8822705268357443,
+      "proportion_looking_left": 1.0,
+      "baseline_mean": 0.6266666666666667,
+      "baseline_std": 0.12780193008453877,
+      "is_significant": false,
+      "p_value": 0.05867423706249786,
+      "test_method": "chi_square",
+      "baseline_max_frame": 5,
+      "first_body_frame": 6,
+      "entry_frame": 134
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\05_proportion_change_timeseries_07_twelve_20250416_164418.png",
+    "plot_type": "05_proportion_change_timeseries",
+    "description": "Time series showing the rate of change (derivative) of the looking-left proportion for age group 'twelve'. The blue line indicates the frame-by-frame change in proportion. Peaks indicate rapid increases in looking left.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "twelve",
+    "created_at": "2025-04-16T16:44:23.546101",
+    "metadata": {
+      "entry_frame": 134,
+      "window_size": 3
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\01_baseline_age_timeseries_01_adult_20250416_164418.png",
+    "plot_type": "01_baseline_age_timeseries",
+    "description": "Time series of the proportion of participants looking left over time for age group 'adult'. The blue line shows the proportion at each frame with 95% CI (gray area). The dotted red horizontal line indicates the calculated statistical threshold (0.23) for detecting a significant shift (baseline mean + 2.00*SD). The dashed purple line shows the baseline mean (0.08) during the baseline period (frames 0-5). The solid red vertical line marks the first significant shift frame (13). The green solid line indicates the First Body Frame at frame 6.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "adult",
+    "created_at": "2025-04-16T16:44:24.179673",
+    "metadata": {
+      "age_group": "adult",
+      "shift_frame": 13,
+      "threshold": 0.22727614253930045,
+      "proportion_looking_left": 0.5454545454545454,
+      "baseline_mean": 0.07727614253930044,
+      "baseline_std": 0.03625223202907584,
+      "is_significant": true,
+      "p_value": 0.0,
+      "test_method": "chi_square",
+      "baseline_max_frame": 5,
+      "first_body_frame": 6,
+      "entry_frame": 13
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\05_proportion_change_timeseries_01_adult_20250416_164418.png",
+    "plot_type": "05_proportion_change_timeseries",
+    "description": "Time series showing the rate of change (derivative) of the looking-left proportion for age group 'adult'. The blue line indicates the frame-by-frame change in proportion. Peaks indicate rapid increases in looking left.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "adult",
+    "created_at": "2025-04-16T16:44:24.464936",
+    "metadata": {
+      "entry_frame": 13,
+      "window_size": 3
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\03_age_group_comparison_all_ages_20250416_164418.png",
+    "plot_type": "03_age_group_comparison",
+    "description": "Comparison of shift frames across age groups for event type gwo.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T16:44:24.665673",
+    "metadata": {
+      "seven": {
+        "entry_frame": 15
+      },
+      "eight": {
+        "entry_frame": 15
+      },
+      "nine": {
+        "entry_frame": 16
+      },
+      "ten": {
+        "entry_frame": 14
+      },
+      "eleven": {
+        "entry_frame": 15
+      },
+      "twelve": {
+        "entry_frame": 134
+      },
+      "adult": {
+        "entry_frame": 13
+      }
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\04_looking_proportion_heatmap_all_ages_20250416_164418.png",
+    "plot_type": "04_looking_proportion_heatmap",
+    "description": "Heatmap showing proportion looking left across all age groups and frames for event type gwo.",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T16:44:25.380035",
+    "metadata": {}
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\15-chat-analysis\\results\\gaze_shift_analysis_20250416_164418_gwo\\02_baseline_detailed_timeseries_all_ages_20250416_164418.png",
+    "plot_type": "02_baseline_detailed_timeseries",
+    "description": "Detailed time series comparison of the proportion looking left across all age groups. Each colored line represents an age group. Shaded areas indicate the 95% confidence intervals. No statistically significant shifts were detected for any group displayed. The gray shaded area represents the baseline period (frames 0-5). The dashed gray line indicates 50% looking proportion. The green vertical line marks the First Body Frame (6).",
+    "analysis_name": null,
+    "event_type": null,
+    "timestamp": "20250416_164418",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T16:44:25.922746",
+    "metadata": {
+      "seven": {
+        "entry_frame": 15
+      },
+      "eight": {
+        "entry_frame": 15
+      },
+      "nine": {
+        "entry_frame": 16
+      },
+      "ten": {
+        "entry_frame": 14
+      },
+      "eleven": {
+        "entry_frame": 15
+      },
+      "twelve": {
+        "entry_frame": 134
+      },
+      "adult": {
+        "entry_frame": 13
+      }
+    }
+  }
+]

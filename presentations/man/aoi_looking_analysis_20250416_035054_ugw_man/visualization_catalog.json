@@ -1,0 +1,191 @@
+[
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\01_individual_timeseries_ugw_02_seven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Man (Face, Hands, Body) for Seven",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "02_seven",
+    "created_at": "2025-04-16T03:52:11.064981",
+    "metadata": {
+      "entry_frame": 16,
+      "exit_frame": 45,
+      "duration_gte_40_entry_lte_75": 29,
+      "latency_body_to_entry_lte_75": 12
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\01_individual_timeseries_ugw_03_eight.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Man (Face, Hands, Body) for Eight",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "03_eight",
+    "created_at": "2025-04-16T03:52:11.852548",
+    "metadata": {
+      "entry_frame": 14,
+      "exit_frame": 60,
+      "duration_gte_40_entry_lte_75": 46,
+      "latency_body_to_entry_lte_75": 10
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\01_individual_timeseries_ugw_04_nine.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Man (Face, Hands, Body) for Nine",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "04_nine",
+    "created_at": "2025-04-16T03:52:12.630283",
+    "metadata": {
+      "entry_frame": 14,
+      "exit_frame": 32,
+      "duration_gte_40_entry_lte_75": 18,
+      "latency_body_to_entry_lte_75": 10
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\01_individual_timeseries_ugw_05_ten.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Man (Face, Hands, Body) for Ten",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "05_ten",
+    "created_at": "2025-04-16T03:52:13.655035",
+    "metadata": {
+      "entry_frame": 13,
+      "exit_frame": 55,
+      "duration_gte_40_entry_lte_75": 42,
+      "latency_body_to_entry_lte_75": 9
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\01_individual_timeseries_ugw_06_eleven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Man (Face, Hands, Body) for Eleven",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "06_eleven",
+    "created_at": "2025-04-16T03:52:14.454608",
+    "metadata": {
+      "entry_frame": 11,
+      "exit_frame": 44,
+      "duration_gte_40_entry_lte_75": 33,
+      "latency_body_to_entry_lte_75": 7
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\01_individual_timeseries_ugw_07_twelve.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Man (Face, Hands, Body) for Twelve",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "07_twelve",
+    "created_at": "2025-04-16T03:52:15.698657",
+    "metadata": {
+      "entry_frame": 11,
+      "exit_frame": 33,
+      "duration_gte_40_entry_lte_75": 22,
+      "latency_body_to_entry_lte_75": 7
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\01_individual_timeseries_ugw_01_adult.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Man (Face, Hands, Body) for Adult",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "01_adult",
+    "created_at": "2025-04-16T03:52:17.985154",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\05_mean_proportion_comparison_bar_ugw_all_ages.png",
+    "plot_type": "05_mean_proportion_comparison_bar",
+    "description": "Bar chart comparing mean proportion looking at Man (Face, Hands, Body) across age groups.",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T03:52:18.710639",
+    "metadata": {
+      "seven": 0.29814381914381916,
+      "eight": 0.2971137756578933,
+      "nine": 0.18353796097836347,
+      "ten": 0.2857454155618442,
+      "eleven": 0.1702017755094549,
+      "twelve": 0.20645502645502645,
+      "adult": 0.11731956281815972
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\02_detailed_timeseries_ugw_all_ages.png",
+    "plot_type": "02_detailed_timeseries",
+    "description": "Detailed time series comparing proportion looking at Man (Face, Hands, Body) across age groups.",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T03:52:19.767541"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\06_heatmap_ugw_all_ages.png",
+    "plot_type": "06_heatmap",
+    "description": "Heatmap showing proportion looking at Man (Face, Hands, Body) across frames and age groups.",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T03:52:22.328552"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\04_duration_bar_ugw_duration_bar_ugw_all_ages.png",
+    "plot_type": "04_duration_bar",
+    "description": "Bar plot showing duration >= 40% (entry <= F75) looking at Man (Face, Hands, Body) for ugw",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "duration_bar_ugw_all_ages",
+    "created_at": "2025-04-16T03:52:23.097027",
+    "metadata": {
+      "seven": 29,
+      "eight": 46,
+      "nine": 18,
+      "ten": 42,
+      "eleven": 33,
+      "twelve": 22,
+      "adult": 0
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_035054_ugw_man\\03_latency_bar_ugw_latency_bar_ugw_all_ages.png",
+    "plot_type": "03_latency_bar",
+    "description": "Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Man (Face, Hands, Body) for ugw",
+    "analysis_name": "AOI_Looking_Man (Face, Hands, Body)",
+    "event_type": "ugw",
+    "timestamp": "20250416_035209",
+    "identifier": "latency_bar_ugw_all_ages",
+    "created_at": "2025-04-16T03:52:23.842265",
+    "metadata": {
+      "seven": 12,
+      "eight": 10,
+      "nine": 10,
+      "ten": 9,
+      "eleven": 7,
+      "twelve": 7,
+      "adult": 0
+    }
+  }
+]

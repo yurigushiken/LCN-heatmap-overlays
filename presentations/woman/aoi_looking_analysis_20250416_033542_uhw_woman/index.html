@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Visualization Report</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; background-color: #1e1e1e; color: #e0e0e0; }
+    h1, h2 { color: #03DAC6; }
+    .plot-container { border: 1px solid #444; margin-bottom: 20px; padding: 15px; background-color: #2a2a2a; }
+    .plot-caption { margin-top: 10px; font-style: italic; color: #b0b0b0; }
+    img { max-width: 100%; height: auto; display: block; margin-top: 10px; border: 1px solid #555; }
+  </style>
+</head>
+<body>
+<h1>Visualization Report</h1>
+<h2>Analysis: AOI_Looking_Woman (Face, Hands, Body)</h2>
+<h2>Event Type: uhw</h2>
+<p>Generated: 2025-04-16 03:37:24</p>
+<hr>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Woman (Face, Hands, Body) for Adult<br><b>Results (Adult):</b>- Entry (&ge;40%, &le;F75): Frame 49- Exit (<40%): Frame 54- Duration (&ge;40%): 5 frames- Latency (from body frame): 46 frames</p>
+  <img src='01_individual_timeseries_uhw_01_adult.png' alt='Time series of proportion looking at Woman (Face, Hands, Body) for Adult'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Woman (Face, Hands, Body) for Seven<br><b>Results (Seven):</b>- Entry (&ge;40%): No sustained entry found.</p>
+  <img src='01_individual_timeseries_uhw_02_seven.png' alt='Time series of proportion looking at Woman (Face, Hands, Body) for Seven'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Woman (Face, Hands, Body) for Eight<br><b>Results (Eight):</b>- Entry (&ge;40%, &le;F75): Frame 51- Exit (<40%): Frame 57- Duration (&ge;40%): 6 frames- Latency (from body frame): 48 frames</p>
+  <img src='01_individual_timeseries_uhw_03_eight.png' alt='Time series of proportion looking at Woman (Face, Hands, Body) for Eight'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Woman (Face, Hands, Body) for Nine<br><b>Results (Nine):</b>- Entry (&ge;40%): No sustained entry found.</p>
+  <img src='01_individual_timeseries_uhw_04_nine.png' alt='Time series of proportion looking at Woman (Face, Hands, Body) for Nine'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Woman (Face, Hands, Body) for Ten<br><b>Results (Ten):</b>- Entry (&ge;40%, &le;F75): Frame 57- Exit (<40%): Frame 68- Duration (&ge;40%): 11 frames- Latency (from body frame): 54 frames</p>
+  <img src='01_individual_timeseries_uhw_05_ten.png' alt='Time series of proportion looking at Woman (Face, Hands, Body) for Ten'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Woman (Face, Hands, Body) for Eleven<br><b>Results (Eleven):</b>- Entry (&ge;40%, &le;F75): Frame 47- Exit (<40%): Frame 71- Duration (&ge;40%): 24 frames- Latency (from body frame): 44 frames</p>
+  <img src='01_individual_timeseries_uhw_06_eleven.png' alt='Time series of proportion looking at Woman (Face, Hands, Body) for Eleven'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Woman (Face, Hands, Body) for Twelve<br><b>Results (Twelve):</b>- Entry (&ge;40%, &le;F75): Frame 48- Exit (<40%): Frame 90- Duration (&ge;40%): 42 frames- Latency (from body frame): 45 frames</p>
+  <img src='01_individual_timeseries_uhw_07_twelve.png' alt='Time series of proportion looking at Woman (Face, Hands, Body) for Twelve'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 02_detailed_timeseries</h3>
+  <p class='plot-caption'>Detailed time series comparing proportion looking at Woman (Face, Hands, Body) across age groups.</p>
+  <img src='02_detailed_timeseries_uhw_all_ages.png' alt='Detailed time series comparing proportion looking at Woman (Face, Hands, Body) across age groups.'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 03_latency_bar</h3>
+  <p class='plot-caption'>Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Woman (Face, Hands, Body) for uhw<br><b>Results (Latency in Frames, 0 if no valid entry &le;F75):</b> seven: 0, eight: 48, nine: 0, ten: 54, eleven: 44, twelve: 45, adult: 46</p>
+  <img src='03_latency_bar_uhw_latency_bar_uhw_all_ages.png' alt='Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Woman (Face, Hands, Body) for uhw'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 04_duration_bar</h3>
+  <p class='plot-caption'>Bar plot showing duration >= 40% (entry <= F75) looking at Woman (Face, Hands, Body) for uhw<br><b>Results (Duration in Frames, 0 if no valid entry &le;F75):</b> seven: 0, eight: 6, nine: 0, ten: 11, eleven: 24, twelve: 42, adult: 5</p>
+  <img src='04_duration_bar_uhw_duration_bar_uhw_all_ages.png' alt='Bar plot showing duration >= 40% (entry <= F75) looking at Woman (Face, Hands, Body) for uhw'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 05_mean_proportion_comparison_bar</h3>
+  <p class='plot-caption'>Bar chart comparing mean proportion looking at Woman (Face, Hands, Body) across age groups.<br><b>Results (Mean Proportion):</b> Seven: 0.126, Eight: 0.118, Nine: 0.147, Ten: 0.181, Eleven: 0.243, Twelve: 0.229, Adult: 0.196</p>
+  <img src='05_mean_proportion_comparison_bar_uhw_all_ages.png' alt='Bar chart comparing mean proportion looking at Woman (Face, Hands, Body) across age groups.'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 06_heatmap</h3>
+  <p class='plot-caption'>Heatmap showing proportion looking at Woman (Face, Hands, Body) across frames and age groups.</p>
+  <img src='06_heatmap_uhw_all_ages.png' alt='Heatmap showing proportion looking at Woman (Face, Hands, Body) across frames and age groups.'>
+</div>
+</body>
+</html>
