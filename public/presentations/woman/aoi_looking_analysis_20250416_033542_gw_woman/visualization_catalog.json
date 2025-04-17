@@ -1,0 +1,191 @@
+[
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\01_individual_timeseries_gw_02_seven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Woman (Face, Hands, Body) for Seven",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "02_seven",
+    "created_at": "2025-04-16T03:35:44.888485",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\01_individual_timeseries_gw_03_eight.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Woman (Face, Hands, Body) for Eight",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "03_eight",
+    "created_at": "2025-04-16T03:35:45.562757",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\01_individual_timeseries_gw_04_nine.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Woman (Face, Hands, Body) for Nine",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "04_nine",
+    "created_at": "2025-04-16T03:35:46.212233",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\01_individual_timeseries_gw_05_ten.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Woman (Face, Hands, Body) for Ten",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "05_ten",
+    "created_at": "2025-04-16T03:35:46.967107",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\01_individual_timeseries_gw_06_eleven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Woman (Face, Hands, Body) for Eleven",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "06_eleven",
+    "created_at": "2025-04-16T03:35:47.670597",
+    "metadata": {
+      "entry_frame": 36,
+      "exit_frame": 44,
+      "duration_gte_40_entry_lte_75": 8,
+      "latency_body_to_entry_lte_75": 33
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\01_individual_timeseries_gw_07_twelve.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Woman (Face, Hands, Body) for Twelve",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "07_twelve",
+    "created_at": "2025-04-16T03:35:48.122863",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\01_individual_timeseries_gw_01_adult.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Woman (Face, Hands, Body) for Adult",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "01_adult",
+    "created_at": "2025-04-16T03:35:48.858502",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\05_mean_proportion_comparison_bar_gw_all_ages.png",
+    "plot_type": "05_mean_proportion_comparison_bar",
+    "description": "Bar chart comparing mean proportion looking at Woman (Face, Hands, Body) across age groups.",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T03:35:49.144952",
+    "metadata": {
+      "seven": 0.12022216763809432,
+      "eight": 0.1224882660044504,
+      "nine": 0.08653315676107669,
+      "ten": 0.11978595333138822,
+      "eleven": 0.15900011602743055,
+      "twelve": 0.06,
+      "adult": 0.14971657846212283
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\02_detailed_timeseries_gw_all_ages.png",
+    "plot_type": "02_detailed_timeseries",
+    "description": "Detailed time series comparing proportion looking at Woman (Face, Hands, Body) across age groups.",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T03:35:49.560302"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\06_heatmap_gw_all_ages.png",
+    "plot_type": "06_heatmap",
+    "description": "Heatmap showing proportion looking at Woman (Face, Hands, Body) across frames and age groups.",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "all_ages",
+    "created_at": "2025-04-16T03:35:50.492685"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\04_duration_bar_gw_duration_bar_gw_all_ages.png",
+    "plot_type": "04_duration_bar",
+    "description": "Bar plot showing duration >= 40% (entry <= F75) looking at Woman (Face, Hands, Body) for gw",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "duration_bar_gw_all_ages",
+    "created_at": "2025-04-16T03:35:50.832551",
+    "metadata": {
+      "seven": 0,
+      "eight": 0,
+      "nine": 0,
+      "ten": 0,
+      "eleven": 8,
+      "twelve": 0,
+      "adult": 0
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250416_033542_gw_woman\\03_latency_bar_gw_latency_bar_gw_all_ages.png",
+    "plot_type": "03_latency_bar",
+    "description": "Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Woman (Face, Hands, Body) for gw",
+    "analysis_name": "AOI_Looking_Woman (Face, Hands, Body)",
+    "event_type": "gw",
+    "timestamp": "20250416_033544",
+    "identifier": "latency_bar_gw_all_ages",
+    "created_at": "2025-04-16T03:35:51.153439",
+    "metadata": {
+      "seven": 0,
+      "eight": 0,
+      "nine": 0,
+      "ten": 0,
+      "eleven": 33,
+      "twelve": 0,
+      "adult": 0
+    }
+  }
+]

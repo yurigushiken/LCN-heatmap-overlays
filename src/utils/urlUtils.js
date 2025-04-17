@@ -48,11 +48,11 @@ export const resolvePath = (path) => {
 export const resolvePresentationAssetPath = (relativePath) => {
   if (!relativePath) return '';
   
-  console.log('Asset path input:', relativePath);
+  // Ensure relativePath starts with a slash if it doesn't already
+  const path = relativePath.startsWith('/') ? relativePath : `/${relativePath}`;
+  // Use PUBLIC_URL (defaulting to empty string if undefined)
+  const fullPath = `${process.env.PUBLIC_URL || ''}${path}`;
   
-  // Use the existing resolvePath function which is known to work correctly
-  const result = resolvePath(relativePath);
-  
-  console.log('Asset path resolved:', result);
-  return result;
+  console.log('Asset path resolved (using PUBLIC_URL):', fullPath);
+  return fullPath;
 }; 

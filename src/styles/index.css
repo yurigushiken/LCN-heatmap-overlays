@@ -16,6 +16,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #2a2a2a;
   color: #f0f0f0;
+  /* Consider adding overflow: hidden here if scaling #root causes body scrollbars */
+}
+
+/* Add this new rule for #root */
+#root {
+  min-height: 100vh; /* Ensure root takes at least full viewport height */
+  transform: scale(0.9);
+  transform-origin: top left;
+  /* Width/height adjustments below are potential fixes if layout breaks, apply ONLY if needed after testing */
+  /* width: calc(100% / 0.9); */ 
+  /* overflow: hidden; */ 
+  transition: transform 0.3s ease; /* Optional: Smooth transition */
+}
+
+/* ADD THIS RULE TO HANDLE FULLSCREEN */
+body.fullscreen-active #root {
+  transform: none; /* Override the scale */
+  width: 100%; /* Ensure it takes full width */
+  min-height: 100vh; /* Ensure it takes full height */
+  overflow: visible; /* Reset overflow if it was hidden */
 }
 
 code {

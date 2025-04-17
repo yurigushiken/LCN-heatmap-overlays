@@ -66,13 +66,17 @@
 
 /* Image caption styling */
 .image-caption {
-  width: 90%;
-  max-width: 800px;
-  margin-top: 15px;
-  padding: 10px 15px;
-  background-color: rgba(245, 245, 245, 0.9);
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align caption text to the left */
+  margin-top: 10px; /* Space between image and caption */
+  padding: 8px; /* Padding inside the caption box */
+  background-color: #f8f9fa; /* Light background for caption */
+  border-top: 1px solid #dee2e6; /* Subtle top border */
+  font-size: 0.9em; /* Slightly smaller font size */
+  color: #495057; /* Darker text color for readability */
+  max-height: 6em; /* Limit height (adjust as needed, e.g., 3-4 lines) */
+  overflow-y: auto; /* Add scrollbar if content exceeds max-height */
+  word-wrap: break-word; /* Allow long words to break */
+  line-height: 1.4; /* Improve readability of wrapped lines */
 }
 
 .image-caption p {

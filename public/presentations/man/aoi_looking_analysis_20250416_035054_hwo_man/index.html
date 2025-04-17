@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Visualization Report</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; background-color: #1e1e1e; color: #e0e0e0; }
+    h1, h2 { color: #03DAC6; }
+    .plot-container { border: 1px solid #444; margin-bottom: 20px; padding: 15px; background-color: #2a2a2a; }
+    .plot-caption { margin-top: 10px; font-style: italic; color: #b0b0b0; }
+    img { max-width: 100%; height: auto; display: block; margin-top: 10px; border: 1px solid #555; }
+  </style>
+</head>
+<body>
+<h1>Visualization Report</h1>
+<h2>Analysis: AOI_Looking_Man (Face, Hands, Body)</h2>
+<h2>Event Type: hwo</h2>
+<p>Generated: 2025-04-16 03:51:46</p>
+<hr>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Man (Face, Hands, Body) for Adult<br><b>Results (Adult):</b>- Entry (&ge;40%): Frame 89 (Occurred after F75, not included in duration/latency calculations)</p>
+  <img src='01_individual_timeseries_hwo_01_adult.png' alt='Time series of proportion looking at Man (Face, Hands, Body) for Adult'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Man (Face, Hands, Body) for Seven<br><b>Results (Seven):</b>- Entry (&ge;40%): Frame 89 (Occurred after F75, not included in duration/latency calculations)</p>
+  <img src='01_individual_timeseries_hwo_02_seven.png' alt='Time series of proportion looking at Man (Face, Hands, Body) for Seven'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Man (Face, Hands, Body) for Eight<br><b>Results (Eight):</b>- Entry (&ge;40%, &le;F75): Frame 31- Exit (<40%): Frame 41- Duration (&ge;40%): 10 frames- Latency (from body frame): 24 frames</p>
+  <img src='01_individual_timeseries_hwo_03_eight.png' alt='Time series of proportion looking at Man (Face, Hands, Body) for Eight'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Man (Face, Hands, Body) for Nine<br><b>Results (Nine):</b>- Entry (&ge;40%, &le;F75): Frame 22- Exit (<40%): Frame 42- Duration (&ge;40%): 20 frames- Latency (from body frame): 15 frames</p>
+  <img src='01_individual_timeseries_hwo_04_nine.png' alt='Time series of proportion looking at Man (Face, Hands, Body) for Nine'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Man (Face, Hands, Body) for Ten<br><b>Results (Ten):</b>- Entry (&ge;40%, &le;F75): Frame 26- Exit (<40%): Frame 42- Duration (&ge;40%): 16 frames- Latency (from body frame): 19 frames</p>
+  <img src='01_individual_timeseries_hwo_05_ten.png' alt='Time series of proportion looking at Man (Face, Hands, Body) for Ten'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Man (Face, Hands, Body) for Eleven<br><b>Results (Eleven):</b>- Entry (&ge;40%, &le;F75): Frame 25- Exit (<40%): Frame 38- Duration (&ge;40%): 13 frames- Latency (from body frame): 18 frames</p>
+  <img src='01_individual_timeseries_hwo_06_eleven.png' alt='Time series of proportion looking at Man (Face, Hands, Body) for Eleven'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 01_individual_timeseries</h3>
+  <p class='plot-caption'>Time series of proportion looking at Man (Face, Hands, Body) for Twelve<br><b>Results (Twelve):</b>- Entry (&ge;40%, &le;F75): Frame 23- Exit (<40%): Frame 47- Duration (&ge;40%): 24 frames- Latency (from body frame): 16 frames</p>
+  <img src='01_individual_timeseries_hwo_07_twelve.png' alt='Time series of proportion looking at Man (Face, Hands, Body) for Twelve'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 02_detailed_timeseries</h3>
+  <p class='plot-caption'>Detailed time series comparing proportion looking at Man (Face, Hands, Body) across age groups.</p>
+  <img src='02_detailed_timeseries_hwo_all_ages.png' alt='Detailed time series comparing proportion looking at Man (Face, Hands, Body) across age groups.'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 03_latency_bar</h3>
+  <p class='plot-caption'>Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Man (Face, Hands, Body) for hwo<br><b>Results (Latency in Frames, 0 if no valid entry &le;F75):</b> seven: 0, eight: 24, nine: 15, ten: 19, eleven: 18, twelve: 16, adult: 0</p>
+  <img src='03_latency_bar_hwo_latency_bar_hwo_all_ages.png' alt='Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Man (Face, Hands, Body) for hwo'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 04_duration_bar</h3>
+  <p class='plot-caption'>Bar plot showing duration >= 40% (entry <= F75) looking at Man (Face, Hands, Body) for hwo<br><b>Results (Duration in Frames, 0 if no valid entry &le;F75):</b> seven: 0, eight: 10, nine: 20, ten: 16, eleven: 13, twelve: 24, adult: 0</p>
+  <img src='04_duration_bar_hwo_duration_bar_hwo_all_ages.png' alt='Bar plot showing duration >= 40% (entry <= F75) looking at Man (Face, Hands, Body) for hwo'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 05_mean_proportion_comparison_bar</h3>
+  <p class='plot-caption'>Bar chart comparing mean proportion looking at Man (Face, Hands, Body) across age groups.<br><b>Results (Mean Proportion):</b> Seven: 0.213, Eight: 0.315, Nine: 0.276, Ten: 0.327, Eleven: 0.214, Twelve: 0.361, Adult: 0.222</p>
+  <img src='05_mean_proportion_comparison_bar_hwo_all_ages.png' alt='Bar chart comparing mean proportion looking at Man (Face, Hands, Body) across age groups.'>
+</div>
+<div class='plot-container'>
+  <h3>Plot Type: 06_heatmap</h3>
+  <p class='plot-caption'>Heatmap showing proportion looking at Man (Face, Hands, Body) across frames and age groups.</p>
+  <img src='06_heatmap_hwo_all_ages.png' alt='Heatmap showing proportion looking at Man (Face, Hands, Body) across frames and age groups.'>
+</div>
+</body>
+</html>
