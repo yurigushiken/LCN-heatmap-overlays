@@ -332,3 +332,5 @@ Each event is segmented into three phases:
 - **interaction** - Main action phase (giving, showing, hugging)
 - **departure** - Final phase where people separate
 
+<!-- Trigger deployment -->
+
