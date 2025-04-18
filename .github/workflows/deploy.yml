@@ -30,13 +30,16 @@ jobs:
       
       - name: Ensure media files are properly copied
         run: |
-          mkdir -p build/videos build/overlays
+          mkdir -p build/videos build/overlays build/presentations
           cp -r public/videos/* build/videos/
           cp -r public/overlays/* build/overlays/
+          cp -r public/presentations/* build/presentations/
           echo "Checking build/videos directory:"
           ls -lh build/videos/
           echo "Checking build/overlays directory:"
           ls -lh build/overlays/
+          echo "Checking build/presentations directory:"
+          ls -lh build/presentations/
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
