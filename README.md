@@ -149,26 +149,22 @@ The application is deployed to GitHub Pages at: https://yurigushiken.github.io/L
 To update the deployment:
 
 1. Make changes to the code
-2. Commit and push to GitHub
-3. The GitHub Actions workflow will automatically deploy the changes
+2. Commit and push changes to the `main` branch on GitHub
+3. The GitHub Actions workflow will automatically build and deploy the changes to the `gh-pages` branch.
 
-### Deployment Notes
+### Deployment Notes & Troubleshooting
 
-If changes don't appear on the live site after pushing to GitHub:
-
-1. **GitHub Actions deployment issue** - Even when workflows report success, they may not correctly update the gh-pages branch
-2. **Solution: Direct deployment** - Use the manual deployment command:
-
-```bash
-npm run deploy
-```
-
-This command builds the project and directly publishes to the gh-pages branch, bypassing GitHub Actions.
-
-3. **Verification** - After deployment, confirm the site displays your changes by checking for:
-   - New UI elements
-   - Updated styling
-   - Changed content
+- **Primary Method:** Deployment is handled automatically by the GitHub Actions workflow defined in `.github/workflows/deploy.yml`. Pushing changes to the `main` branch triggers this workflow.
+- **Workflow Essentials:**
+    - The workflow runs the `npm run build` command.
+    - It explicitly copies necessary static assets (like videos, overlays, presentations) from the `public/` directory to the `build/` output before deployment. Ensure all required directories are included in the `cp` commands within `deploy.yml` if new asset types are added.
+    - The workflow requires `permissions: contents: write` to allow the deployment action to push the build to the `gh-pages` branch. Default repository token permissions might be insufficient.
+- **Monitoring:** If the live site doesn't update after a push to `main`, check the **Actions** tab in the GitHub repository for the status of the "Deploy to GitHub Pages" workflow. Logs there will show build or deployment errors.
+    - An error like `The process '/usr/bin/git' failed with exit code 128` during the deploy step often indicates insufficient permissions. Ensure the `permissions` are set correctly in `deploy.yml`.
+- **Manual Fallback (`npm run deploy`):**
+    - The `npm run deploy` command can be used for manual deployment from your local machine. It runs `npm run build` and uses the `gh-pages` package to push the `build/` folder to the `gh-pages` branch.
+    - **Caution:** This method may fail on some operating systems (like Windows) with `ENAMETOOLONG` errors if the project has a very large number of files in the build output. The GitHub Actions workflow is generally more reliable.
+- **Verification:** After a successful deployment (via Actions or manually), always verify the live site. Clear your browser cache (hard refresh: Ctrl+Shift+R or Cmd+Shift+R) to ensure you see the latest version. Check the browser's developer console for any errors if the site doesn't load correctly (e.g., 404 errors for missing assets).
 
 ## Browser Compatibility
 
@@ -177,6 +173,52 @@ This application is compatible with modern browsers that support:
 - WebM video with alpha channel
 - Canvas API
 - ES6+ JavaScript features
+
+## Adding New Analysis Presentations
+
+This section outlines the steps required to add new analysis types (like 'Toy', 'Toy2') or update existing ones with new data to the presentation viewer.
+
+1.  **Prepare New Data:**
+    *   Ensure the final analysis output directories (containing plot images and `visualization_catalog.json`) are correctly placed within the `public/presentations/` directory structure.
+    *   Each event subdirectory (e.g., `aoi_looking_analysis_TIMESTAMP_EVENT_TYPE`) must contain the necessary `.png` plot files and the `visualization_catalog.json` for metadata/captions.
+
+2.  **Locate Manifest File:**
+    *   The primary configuration is in `public/presentations/presentations_manifest.json`.
+
+3.  **Understand Manifest Structure:**
+    *   The manifest contains a main `analysisTypes` array.
+    *   Each object in this array represents an analysis type (e.g., `{ "id": "toy", "name": "Toy", "events": [...] }`).
+    *   Each analysis type contains an `events` array.
+    *   Each object in the `events` array represents a specific condition/event (e.g., `{ "eventId": "f", "presentationTitle": "...", "directoryPath": "...", "plots": [...] }`).
+
+4.  **Add/Update Analysis Entries:**
+    *   **To Add:** Copy an existing analysis type object, paste it into the `analysisTypes` array, and update its `id`, `name`, and `events`.
+    *   **To Update:** Modify the relevant fields within an existing analysis type object.
+    *   For each `event` object (new or existing):
+        *   Set the correct `eventId` (e.g., "f", "gwo").
+        *   Set a descriptive `presentationTitle`.
+        *   **Crucially:** Set the `directoryPath` to the *exact* relative path (from `/public/`) of the corresponding analysis output directory (e.g., `/presentations/toy2/aoi_looking_analysis_20250424_201132_gwo_toy2`). Ensure the path, timestamp, and event suffix match the actual folder name.
+        *   Update the `plots` array to list the exact `.png` filenames within that event's directory.
+
+5.  **Validate Changes:**
+    *   **Paths:** Double-check every `directoryPath` in the manifest against the actual folders in `public/presentations/`. Typos are common.
+    *   **JSON Validity:** Ensure the overall JSON structure is correct (commas, brackets, braces). Use an online validator if unsure.
+    *   **Files:** Confirm that each `directoryPath` listed actually exists and contains the expected `.png` files and the `visualization_catalog.json`.
+    *   **Duplicates:** Check for unintentionally duplicated `event` objects within an analysis type.
+
+6.  **Save Manifest:**
+    *   Save the changes to `public/presentations/presentations_manifest.json`.
+
+7.  **Restart Web Server:**
+    *   Stop the current local development server (Ctrl+C in the terminal where it's running).
+    *   Restart it using `npm start`. This forces the server to load the updated manifest.
+
+8.  **Test Thoroughly:**
+    *   Open the web application in your browser.
+    *   Navigate to the "Analysis Plots" section.
+    *   Select the newly added/updated analysis types and events from the dropdowns.
+    *   Verify that all plots load correctly without errors.
+    *   Check the browser's developer console (F12) for 404 errors (missing files) or JSON parsing errors, which usually point to issues in the manifest or the data directories.
 
 ## License
 

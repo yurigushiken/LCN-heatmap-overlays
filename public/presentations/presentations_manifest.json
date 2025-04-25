@@ -723,6 +723,224 @@
           ]
         }
       ]
+    },
+    {
+      "id": "toy",
+      "name": "Toy",
+      "events": [
+        {
+          "eventId": "presentation",
+          "presentationTitle": "Presentation Overview (Toy)",
+          "directoryPath": "/presentations/toy/aoi_looking_analysis_20250424_173751_presentation_toy",
+          "plots": [
+            "summary_cover_page.png"
+          ]
+        },
+        {
+          "eventId": "f",
+          "presentationTitle": "Floating Toy (f) - Looking (Toy)",
+          "directoryPath": "/presentations/toy/aoi_looking_analysis_20250424_173751_f_toy",
+          "plots": [
+            "01_individual_timeseries_f_01_adult.png",
+            "01_individual_timeseries_f_02_seven.png",
+            "01_individual_timeseries_f_03_eight.png",
+            "01_individual_timeseries_f_04_nine.png",
+            "01_individual_timeseries_f_05_ten.png",
+            "01_individual_timeseries_f_06_eleven.png",
+            "01_individual_timeseries_f_07_twelve.png",
+            "02_detailed_timeseries_f_all_ages.png",
+            "03_latency_bar_f_latency_bar_f_all_ages.png",
+            "04_duration_bar_f_duration_bar_f_all_ages.png",
+            "05_mean_proportion_comparison_bar_f_all_ages.png",
+            "06_heatmap_f_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "hw",
+          "presentationTitle": "Hug With Toy (hw) - Looking (Toy)",
+          "directoryPath": "/presentations/toy/aoi_looking_analysis_20250424_173751_hw_toy",
+          "plots": [
+            "01_individual_timeseries_hw_01_adult.png",
+            "01_individual_timeseries_hw_02_seven.png",
+            "01_individual_timeseries_hw_03_eight.png",
+            "01_individual_timeseries_hw_04_nine.png",
+            "01_individual_timeseries_hw_05_ten.png",
+            "01_individual_timeseries_hw_06_eleven.png",
+            "01_individual_timeseries_hw_07_twelve.png",
+            "02_detailed_timeseries_hw_all_ages.png",
+            "03_latency_bar_hw_latency_bar_hw_all_ages.png",
+            "04_duration_bar_hw_duration_bar_hw_all_ages.png",
+            "05_mean_proportion_comparison_bar_hw_all_ages.png",
+            "06_heatmap_hw_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "sw",
+          "presentationTitle": "Show With Toy (sw) - Looking (Toy)",
+          "directoryPath": "/presentations/toy/aoi_looking_analysis_20250424_173751_sw_toy",
+          "plots": [
+            "01_individual_timeseries_sw_01_adult.png",
+            "01_individual_timeseries_sw_02_seven.png",
+            "01_individual_timeseries_sw_03_eight.png",
+            "01_individual_timeseries_sw_04_nine.png",
+            "01_individual_timeseries_sw_05_ten.png",
+            "01_individual_timeseries_sw_06_eleven.png",
+            "01_individual_timeseries_sw_07_twelve.png",
+            "02_detailed_timeseries_sw_all_ages.png",
+            "03_latency_bar_sw_latency_bar_sw_all_ages.png",
+            "04_duration_bar_sw_duration_bar_sw_all_ages.png",
+            "05_mean_proportion_comparison_bar_sw_all_ages.png",
+            "06_heatmap_sw_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "ugw",
+          "presentationTitle": "Upside-down Give With Toy (ugw) - Looking (Toy)",
+          "directoryPath": "/presentations/toy/aoi_looking_analysis_20250424_173751_ugw_toy",
+          "plots": [
+            "01_individual_timeseries_ugw_01_adult.png",
+            "01_individual_timeseries_ugw_02_seven.png",
+            "01_individual_timeseries_ugw_03_eight.png",
+            "01_individual_timeseries_ugw_04_nine.png",
+            "01_individual_timeseries_ugw_05_ten.png",
+            "01_individual_timeseries_ugw_06_eleven.png",
+            "01_individual_timeseries_ugw_07_twelve.png",
+            "02_detailed_timeseries_ugw_all_ages.png",
+            "03_latency_bar_ugw_latency_bar_ugw_all_ages.png",
+            "04_duration_bar_ugw_duration_bar_ugw_all_ages.png",
+            "05_mean_proportion_comparison_bar_ugw_all_ages.png",
+            "06_heatmap_ugw_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "uhw",
+          "presentationTitle": "Upside-down Hug With Toy (uhw) - Looking (Toy)",
+          "directoryPath": "/presentations/toy/aoi_looking_analysis_20250424_173751_uhw_toy",
+          "plots": [
+            "01_individual_timeseries_uhw_01_adult.png",
+            "01_individual_timeseries_uhw_02_seven.png",
+            "01_individual_timeseries_uhw_03_eight.png",
+            "01_individual_timeseries_uhw_04_nine.png",
+            "01_individual_timeseries_uhw_05_ten.png",
+            "01_individual_timeseries_uhw_06_eleven.png",
+            "01_individual_timeseries_uhw_07_twelve.png",
+            "02_detailed_timeseries_uhw_all_ages.png",
+            "03_latency_bar_uhw_latency_bar_uhw_all_ages.png",
+            "04_duration_bar_uhw_duration_bar_uhw_all_ages.png",
+            "05_mean_proportion_comparison_bar_uhw_all_ages.png",
+            "06_heatmap_uhw_all_ages.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toy2",
+      "name": "Toy2",
+      "events": [
+        {
+          "eventId": "presentation",
+          "presentationTitle": "Presentation Overview (Toy2)",
+          "directoryPath": "/presentations/toy2/aoi_looking_analysis_20250424_201132_presentation_toy2",
+          "plots": [
+            "summary_cover_page.png"
+          ]
+        },
+        {
+          "eventId": "gwo",
+          "presentationTitle": "Give Without Toy (gwo) - Looking (Toy2)",
+          "directoryPath": "/presentations/toy2/aoi_looking_analysis_20250424_201132_gwo_toy2",
+          "plots": [
+            "01_individual_timeseries_gwo_01_adult.png",
+            "01_individual_timeseries_gwo_02_seven.png",
+            "01_individual_timeseries_gwo_03_eight.png",
+            "01_individual_timeseries_gwo_04_nine.png",
+            "01_individual_timeseries_gwo_05_ten.png",
+            "01_individual_timeseries_gwo_06_eleven.png",
+            "01_individual_timeseries_gwo_07_twelve.png",
+            "02_detailed_timeseries_gwo_all_ages.png",
+            "03_latency_bar_gwo_latency_bar_gwo_all_ages.png",
+            "04_duration_bar_gwo_duration_bar_gwo_all_ages.png",
+            "05_mean_proportion_comparison_bar_gwo_all_ages.png",
+            "06_heatmap_gwo_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "hwo",
+          "presentationTitle": "Hug Without Toy (hwo) - Looking (Toy2)",
+          "directoryPath": "/presentations/toy2/aoi_looking_analysis_20250424_201132_hwo_toy2",
+          "plots": [
+            "01_individual_timeseries_hwo_01_adult.png",
+            "01_individual_timeseries_hwo_02_seven.png",
+            "01_individual_timeseries_hwo_03_eight.png",
+            "01_individual_timeseries_hwo_04_nine.png",
+            "01_individual_timeseries_hwo_05_ten.png",
+            "01_individual_timeseries_hwo_06_eleven.png",
+            "01_individual_timeseries_hwo_07_twelve.png",
+            "02_detailed_timeseries_hwo_all_ages.png",
+            "03_latency_bar_hwo_latency_bar_hwo_all_ages.png",
+            "04_duration_bar_hwo_duration_bar_hwo_all_ages.png",
+            "05_mean_proportion_comparison_bar_hwo_all_ages.png",
+            "06_heatmap_hwo_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "swo",
+          "presentationTitle": "Show Without Toy (swo) - Looking (Toy2)",
+          "directoryPath": "/presentations/toy2/aoi_looking_analysis_20250424_201132_swo_toy2",
+          "plots": [
+            "01_individual_timeseries_swo_01_adult.png",
+            "01_individual_timeseries_swo_02_seven.png",
+            "01_individual_timeseries_swo_03_eight.png",
+            "01_individual_timeseries_swo_04_nine.png",
+            "01_individual_timeseries_swo_05_ten.png",
+            "01_individual_timeseries_swo_06_eleven.png",
+            "01_individual_timeseries_swo_07_twelve.png",
+            "02_detailed_timeseries_swo_all_ages.png",
+            "03_latency_bar_swo_latency_bar_swo_all_ages.png",
+            "04_duration_bar_swo_duration_bar_swo_all_ages.png",
+            "05_mean_proportion_comparison_bar_swo_all_ages.png",
+            "06_heatmap_swo_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "ugwo",
+          "presentationTitle": "Upside-down Give Without Toy (ugwo) - Looking (Toy2)",
+          "directoryPath": "/presentations/toy2/aoi_looking_analysis_20250424_201132_ugwo_toy2",
+          "plots": [
+            "01_individual_timeseries_ugwo_01_adult.png",
+            "01_individual_timeseries_ugwo_02_seven.png",
+            "01_individual_timeseries_ugwo_03_eight.png",
+            "01_individual_timeseries_ugwo_04_nine.png",
+            "01_individual_timeseries_ugwo_05_ten.png",
+            "01_individual_timeseries_ugwo_06_eleven.png",
+            "01_individual_timeseries_ugwo_07_twelve.png",
+            "02_detailed_timeseries_ugwo_all_ages.png",
+            "03_latency_bar_ugwo_latency_bar_ugwo_all_ages.png",
+            "04_duration_bar_ugwo_duration_bar_ugwo_all_ages.png",
+            "05_mean_proportion_comparison_bar_ugwo_all_ages.png",
+            "06_heatmap_ugwo_all_ages.png"
+          ]
+        },
+        {
+          "eventId": "uhwo",
+          "presentationTitle": "Upside-down Hug Without Toy (uhwo) - Looking (Toy2)",
+          "directoryPath": "/presentations/toy2/aoi_looking_analysis_20250424_201132_uhwo_toy2",
+          "plots": [
+            "01_individual_timeseries_uhwo_01_adult.png",
+            "01_individual_timeseries_uhwo_02_seven.png",
+            "01_individual_timeseries_uhwo_03_eight.png",
+            "01_individual_timeseries_uhwo_04_nine.png",
+            "01_individual_timeseries_uhwo_05_ten.png",
+            "01_individual_timeseries_uhwo_06_eleven.png",
+            "01_individual_timeseries_uhwo_07_twelve.png",
+            "02_detailed_timeseries_uhwo_all_ages.png",
+            "03_latency_bar_uhwo_latency_bar_uhwo_all_ages.png",
+            "04_duration_bar_uhwo_duration_bar_uhwo_all_ages.png",
+            "05_mean_proportion_comparison_bar_uhwo_all_ages.png",
+            "06_heatmap_uhwo_all_ages.png"
+          ]
+        }
+      ]
     }
   ]
 } 
