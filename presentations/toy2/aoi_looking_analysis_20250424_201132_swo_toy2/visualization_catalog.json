@@ -1,0 +1,191 @@
+[
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\01_individual_timeseries_swo_02_seven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Seven",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "02_seven",
+    "created_at": "2025-04-24T20:11:47.872085",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\01_individual_timeseries_swo_03_eight.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Eight",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "03_eight",
+    "created_at": "2025-04-24T20:11:48.768909",
+    "metadata": {
+      "entry_frame": 75,
+      "exit_frame": 121,
+      "duration_gte_40_entry_lte_75": 46,
+      "latency_body_to_entry_lte_75": 69
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\01_individual_timeseries_swo_04_nine.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Nine",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "04_nine",
+    "created_at": "2025-04-24T20:11:49.638179",
+    "metadata": {
+      "entry_frame": 75,
+      "exit_frame": 95,
+      "duration_gte_40_entry_lte_75": 20,
+      "latency_body_to_entry_lte_75": 69
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\01_individual_timeseries_swo_05_ten.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Ten",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "05_ten",
+    "created_at": "2025-04-24T20:11:50.504726",
+    "metadata": {
+      "entry_frame": 79,
+      "exit_frame": 106,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\01_individual_timeseries_swo_06_eleven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Eleven",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "06_eleven",
+    "created_at": "2025-04-24T20:11:51.283467",
+    "metadata": {
+      "entry_frame": 74,
+      "exit_frame": 92,
+      "duration_gte_40_entry_lte_75": 18,
+      "latency_body_to_entry_lte_75": 68
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\01_individual_timeseries_swo_07_twelve.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Twelve",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "07_twelve",
+    "created_at": "2025-04-24T20:11:51.827729",
+    "metadata": {
+      "entry_frame": 87,
+      "exit_frame": 91,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\01_individual_timeseries_swo_01_adult.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Adult",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "01_adult",
+    "created_at": "2025-04-24T20:11:52.758166",
+    "metadata": {
+      "entry_frame": 50,
+      "exit_frame": 54,
+      "duration_gte_40_entry_lte_75": 4,
+      "latency_body_to_entry_lte_75": 44
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\05_mean_proportion_comparison_bar_swo_all_ages.png",
+    "plot_type": "05_mean_proportion_comparison_bar",
+    "description": "Bar chart comparing mean proportion looking at Toy Location (No Toy) across age groups.",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T20:11:53.073722",
+    "metadata": {
+      "seven": 0.12628086831182805,
+      "eight": 0.28869217633072125,
+      "nine": 0.173531735773636,
+      "ten": 0.19827324637861896,
+      "eleven": 0.20995296235823224,
+      "twelve": 0.21777777777777776,
+      "adult": 0.14970690581287235
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\02_detailed_timeseries_swo_all_ages.png",
+    "plot_type": "02_detailed_timeseries",
+    "description": "Detailed time series comparing proportion looking at Toy Location (No Toy) across age groups.",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T20:11:53.602079"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\06_heatmap_swo_all_ages.png",
+    "plot_type": "06_heatmap",
+    "description": "Heatmap showing proportion looking at Toy Location (No Toy) across frames and age groups.",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T20:11:54.654130"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\04_duration_bar_swo_duration_bar_swo_all_ages.png",
+    "plot_type": "04_duration_bar",
+    "description": "Bar plot showing duration >= 40% (entry <= F75) looking at Toy Location (No Toy) for swo",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "duration_bar_swo_all_ages",
+    "created_at": "2025-04-24T20:11:55.052485",
+    "metadata": {
+      "seven": 0,
+      "eight": 46,
+      "nine": 20,
+      "ten": 0,
+      "eleven": 18,
+      "twelve": 0,
+      "adult": 4
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_swo_toy2\\03_latency_bar_swo_latency_bar_swo_all_ages.png",
+    "plot_type": "03_latency_bar",
+    "description": "Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Toy Location (No Toy) for swo",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "swo",
+    "timestamp": "20250424_201146",
+    "identifier": "latency_bar_swo_all_ages",
+    "created_at": "2025-04-24T20:11:55.451193",
+    "metadata": {
+      "seven": 0,
+      "eight": 69,
+      "nine": 69,
+      "ten": 0,
+      "eleven": 68,
+      "twelve": 0,
+      "adult": 44
+    }
+  }
+]

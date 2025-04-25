@@ -1,0 +1,191 @@
+[
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\01_individual_timeseries_hw_02_seven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy for Seven",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "02_seven",
+    "created_at": "2025-04-24T17:38:14.495188",
+    "metadata": {
+      "entry_frame": 33,
+      "exit_frame": 40,
+      "duration_gte_40_entry_lte_75": 7,
+      "latency_body_to_entry_lte_75": 30
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\01_individual_timeseries_hw_03_eight.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy for Eight",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "03_eight",
+    "created_at": "2025-04-24T17:38:15.181484",
+    "metadata": {
+      "entry_frame": 71,
+      "exit_frame": 82,
+      "duration_gte_40_entry_lte_75": 11,
+      "latency_body_to_entry_lte_75": 68
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\01_individual_timeseries_hw_04_nine.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy for Nine",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "04_nine",
+    "created_at": "2025-04-24T17:38:15.818072",
+    "metadata": {
+      "entry_frame": 54,
+      "exit_frame": 93,
+      "duration_gte_40_entry_lte_75": 39,
+      "latency_body_to_entry_lte_75": 51
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\01_individual_timeseries_hw_05_ten.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy for Ten",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "05_ten",
+    "created_at": "2025-04-24T17:38:16.459083",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\01_individual_timeseries_hw_06_eleven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy for Eleven",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "06_eleven",
+    "created_at": "2025-04-24T17:38:17.017023",
+    "metadata": {
+      "entry_frame": 89,
+      "exit_frame": 93,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\01_individual_timeseries_hw_07_twelve.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy for Twelve",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "07_twelve",
+    "created_at": "2025-04-24T17:38:17.519177",
+    "metadata": {
+      "entry_frame": 41,
+      "exit_frame": 60,
+      "duration_gte_40_entry_lte_75": 19,
+      "latency_body_to_entry_lte_75": 38
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\01_individual_timeseries_hw_01_adult.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy for Adult",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "01_adult",
+    "created_at": "2025-04-24T17:38:18.253483",
+    "metadata": {
+      "entry_frame": 34,
+      "exit_frame": 46,
+      "duration_gte_40_entry_lte_75": 12,
+      "latency_body_to_entry_lte_75": 31
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\05_mean_proportion_comparison_bar_hw_all_ages.png",
+    "plot_type": "05_mean_proportion_comparison_bar",
+    "description": "Bar chart comparing mean proportion looking at Toy across age groups.",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T17:38:18.474568",
+    "metadata": {
+      "seven": 0.18399365134349654,
+      "eight": 0.1477147194175731,
+      "nine": 0.19770456933847028,
+      "ten": 0.1156618502246785,
+      "eleven": 0.17009633383414285,
+      "twelve": 0.08673015873015873,
+      "adult": 0.23498267398424977
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\02_detailed_timeseries_hw_all_ages.png",
+    "plot_type": "02_detailed_timeseries",
+    "description": "Detailed time series comparing proportion looking at Toy across age groups.",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T17:38:18.897702"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\06_heatmap_hw_all_ages.png",
+    "plot_type": "06_heatmap",
+    "description": "Heatmap showing proportion looking at Toy across frames and age groups.",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T17:38:19.721652"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\04_duration_bar_hw_duration_bar_hw_all_ages.png",
+    "plot_type": "04_duration_bar",
+    "description": "Bar plot showing duration >= 40% (entry <= F75) looking at Toy for hw",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "duration_bar_hw_all_ages",
+    "created_at": "2025-04-24T17:38:20.031801",
+    "metadata": {
+      "seven": 7,
+      "eight": 11,
+      "nine": 39,
+      "ten": 0,
+      "eleven": 0,
+      "twelve": 19,
+      "adult": 12
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_173751_hw_toy\\03_latency_bar_hw_latency_bar_hw_all_ages.png",
+    "plot_type": "03_latency_bar",
+    "description": "Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Toy for hw",
+    "analysis_name": "AOI_Looking_Toy",
+    "event_type": "hw",
+    "timestamp": "20250424_173813",
+    "identifier": "latency_bar_hw_all_ages",
+    "created_at": "2025-04-24T17:38:20.330401",
+    "metadata": {
+      "seven": 30,
+      "eight": 68,
+      "nine": 51,
+      "ten": 0,
+      "eleven": 0,
+      "twelve": 38,
+      "adult": 31
+    }
+  }
+]

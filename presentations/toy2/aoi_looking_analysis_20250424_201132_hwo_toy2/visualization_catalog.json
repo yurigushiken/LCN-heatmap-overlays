@@ -1,0 +1,191 @@
+[
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\01_individual_timeseries_hwo_02_seven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Seven",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "02_seven",
+    "created_at": "2025-04-24T20:11:59.351626",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\01_individual_timeseries_hwo_03_eight.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Eight",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "03_eight",
+    "created_at": "2025-04-24T20:12:00.241873",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\01_individual_timeseries_hwo_04_nine.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Nine",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "04_nine",
+    "created_at": "2025-04-24T20:12:01.109826",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\01_individual_timeseries_hwo_05_ten.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Ten",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "05_ten",
+    "created_at": "2025-04-24T20:12:02.025213",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\01_individual_timeseries_hwo_06_eleven.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Eleven",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "06_eleven",
+    "created_at": "2025-04-24T20:12:02.814309",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\01_individual_timeseries_hwo_07_twelve.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Twelve",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "07_twelve",
+    "created_at": "2025-04-24T20:12:03.392370",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\01_individual_timeseries_hwo_01_adult.png",
+    "plot_type": "01_individual_timeseries",
+    "description": "Time series of proportion looking at Toy Location (No Toy) for Adult",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "01_adult",
+    "created_at": "2025-04-24T20:12:04.414542",
+    "metadata": {
+      "entry_frame": null,
+      "exit_frame": null,
+      "duration_gte_40_entry_lte_75": null,
+      "latency_body_to_entry_lte_75": null
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\05_mean_proportion_comparison_bar_hwo_all_ages.png",
+    "plot_type": "05_mean_proportion_comparison_bar",
+    "description": "Bar chart comparing mean proportion looking at Toy Location (No Toy) across age groups.",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T20:12:04.726867",
+    "metadata": {
+      "seven": 0.11128294612051841,
+      "eight": 0.08209039213481563,
+      "nine": 0.06569860429503095,
+      "ten": 0.06686045047351773,
+      "eleven": 0.08637787179390251,
+      "twelve": 0.09109734709734711,
+      "adult": 0.12290530019208205
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\02_detailed_timeseries_hwo_all_ages.png",
+    "plot_type": "02_detailed_timeseries",
+    "description": "Detailed time series comparing proportion looking at Toy Location (No Toy) across age groups.",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T20:12:05.221092"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\06_heatmap_hwo_all_ages.png",
+    "plot_type": "06_heatmap",
+    "description": "Heatmap showing proportion looking at Toy Location (No Toy) across frames and age groups.",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "all_ages",
+    "created_at": "2025-04-24T20:12:06.306490"
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\04_duration_bar_hwo_duration_bar_hwo_all_ages.png",
+    "plot_type": "04_duration_bar",
+    "description": "Bar plot showing duration >= 40% (entry <= F75) looking at Toy Location (No Toy) for hwo",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "duration_bar_hwo_all_ages",
+    "created_at": "2025-04-24T20:12:06.716750",
+    "metadata": {
+      "seven": 0,
+      "eight": 0,
+      "nine": 0,
+      "ten": 0,
+      "eleven": 0,
+      "twelve": 0,
+      "adult": 0
+    }
+  },
+  {
+    "file_path": "C:\\Users\\yurig\\CascadeProjects\\IER-data-analysis\\analysis\\16-chat-analysis-look-man\\results\\aoi_looking_analysis_20250424_201132_hwo_toy2\\03_latency_bar_hwo_latency_bar_hwo_all_ages.png",
+    "plot_type": "03_latency_bar",
+    "description": "Bar plot showing latency from body frame to >=40% entry (entry <= F75) looking at Toy Location (No Toy) for hwo",
+    "analysis_name": "AOI_Looking_Toy Location (No Toy)",
+    "event_type": "hwo",
+    "timestamp": "20250424_201158",
+    "identifier": "latency_bar_hwo_all_ages",
+    "created_at": "2025-04-24T20:12:07.099981",
+    "metadata": {
+      "seven": 0,
+      "eight": 0,
+      "nine": 0,
+      "ten": 0,
+      "eleven": 0,
+      "twelve": 0,
+      "adult": 0
+    }
+  }
+]
