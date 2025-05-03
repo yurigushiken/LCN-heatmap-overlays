@@ -29,8 +29,11 @@
 .caption-toggle,
 .fullscreen-toggle { /* Apply base styles to both */
   padding: 8px 12px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  /* background-color: #f0f0f0; */ /* Remove light background */
+  /* border: 1px solid #ccc; */    /* Remove light border */
+  background-color: #444; /* Add dark background */
+  border: 1px solid #555; /* Add slightly darker border */
+  color: #eee; /* Add light text color */
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
@@ -39,11 +42,15 @@
 
 .caption-toggle:hover,
 .fullscreen-toggle:hover {
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */ /* Remove light hover */
+  background-color: #555; /* Add darker hover background */
+  border-color: #666; /* Add darker hover border */
 }
 
 .caption-toggle.active {
-  background-color: #d0d0d0;
+  /* background-color: #d0d0d0; */ /* Remove light active */
+  background-color: #666; /* Add darker active background */
+  border-color: #777; /* Add darker active border */
   font-weight: bold;
 }
 
