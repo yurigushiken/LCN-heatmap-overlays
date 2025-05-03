@@ -2,11 +2,15 @@
 
 .presentation-section {
   padding: 20px;
-  background-color: #ffffff; /* Light background */
-  border: 1px solid #e0e0e0; /* Subtle border */
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-  margin-top: 20px;
+  /* background-color: #ffffff; /* Light background */ */
+  background-color: #333333; /* Dark background to match theme */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consider adjusting shadow later */
+  position: relative; /* For fullscreen positioning */
+  transition: all 0.3s ease; /* For smooth fullscreen transition */
+  width: 100%; /* Ensure it takes full width */
+  box-sizing: border-box; /* Include padding in width */
+  margin-top: 20px; /* Space above this section */
 }
 
 .presentation-header {
