@@ -9,17 +9,11 @@
 
 ## Overview
 
-This project provides a web-based interface for viewing videos with interactive heatmap overlays for eye-tracking data from the Language and Cognitive Neuroscience Lab. It visualizes infant and adult gaze patterns during social interaction events, enabling researchers to analyze how visual attention to social events develops across different age groups. The application supports multiple overlay toggles and age group selections to facilitate comparative analysis.
+This project is a website and interface for viewing videos with interactive heatmap overlays for eye-tracking data. It  allows us to analyze our data frame-by-frame for convenient comparison across  participant groups. 
 
-## Scientific Background
+## Background
 
-The heatmap overlays represent eye-tracking data collected from participants across different developmental stages (7-11 month-old infants and adults). Each overlay visualizes where participants directed their attention during social interaction events. The data has been processed using Gaussian kernel density estimation to create visually informative heatmaps highlighting areas of concentrated visual attention.
-
-Key scientific aspects:
-- Tracks developmental changes in social attention from infancy to adulthood
-- Enables direct comparison between different age groups through overlay stacking
-- Uses color-coding by age group for intuitive visual differentiation
-- Employs variable intensity mapping to show gaze concentration
+The heatmap overlays represent eye-tracking data from participants (7-11 month-old infants and adults). Each overlay shows all trials of participant gaze for particular age group. We process using Gaussian kernel density estimation.
 
 ## Features
 
@@ -130,13 +124,12 @@ The `videos.json` file in the public directory contains the configuration for al
 
 ## Technical Details
 
-The heatmap overlays were generated from raw eye-tracking data using a sophisticated processing pipeline:
+Heatmap overlay generation:
 
 - Gaussian kernel density estimation to create smooth heatmaps from discrete gaze points
 - Age-specific color encoding to differentiate between developmental stages
 - Multiple transparency layers to represent varying intensity levels of visual attention
 - VP9 video encoding with alpha channel transparency for web compatibility
-- Strategic positioning of age-group legends to prevent overlap when multiple overlays are active
 
 ## Performance
 
